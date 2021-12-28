@@ -2,8 +2,6 @@ package dao;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
-
-import modelo.DA_ERROR;
 import modelo.Genero;
 import modelo.Juego;
 import modelo.Plataforma;
@@ -11,54 +9,25 @@ import modelo.Plataforma;
 /**
  * 
  * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes, Natalia, Jaume
- *
+ * @inheritDoc
  */
+
 public class DaoJuegosImpl implements IDao {
 
 	private Map <Integer, Juego> lista = new HashMap<>();
 
-	/**
-	 * Genera un número aleatorio mayor que los del ficheroCSV.
-	 * @return Integer id
-	 */
-	
 	public Integer darCodigoAleatorio () {
 		int id;
 		id = (int) Math.round((Math.random() * (50000 - 16601) + 16601));
 		return id;		
 	}
 
-	/**
-	 * Da de alta el juego que el usuario quiera, generando un código aleatorio y preguntando los
-	 * atributos del juego.
-	 * @param juego Juego
-	 *
-	 */	
-
 	@Override
 	public void altaJuegoNuevo(Juego juego) {
 		lista.put(darCodigoAleatorio(), juego.crearJuego());
 	}
 
-	@Override
-	public void altaJuegoLista(Juego juego) {
 
-	}
-
-	@Override
-	public void bajaJuego(Juego juego) {
-
-	}
-
-	@Override
-	public void modificarJuego(Integer id) {
-
-	}
-
-	/**
-	 * Lee el fichero
-	 * @param fichero String
-	 */
 	@Override
 	public void cargarCSV(String fichero) {
 		try (BufferedReader br = new BufferedReader(new FileReader(fichero))) {
@@ -94,16 +63,6 @@ public class DaoJuegosImpl implements IDao {
 	}
 
 	@Override
-	public void borrarTodo() {
-
-	}
-
-	/**
-	 * Serializa la lista.
-	 * @param fichero String
-	 */
-
-	@Override
 	public void serializar(String fichero) {
 		File f;
 		try {
@@ -117,10 +76,6 @@ public class DaoJuegosImpl implements IDao {
 
 	}
 
-	/**
-	 * Deserializa la lista.
-	 * @param fichero String
-	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void deserializar(String fichero) throws ClassNotFoundException {
@@ -136,6 +91,5 @@ public class DaoJuegosImpl implements IDao {
 		}
 
 	}
-
 
 }

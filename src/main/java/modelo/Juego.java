@@ -41,7 +41,7 @@ public @Data class Juego implements Serializable{
 		this.fechaPublicacion=LecturaServicio.escribeTexto("Indique el año de publicación del juego.");
 		Plataforma.plataformasDisponibles();
 		this.plataforma=Plataforma.dimePlataforma(LecturaServicio.escribeNum("Indique el número correspondiente a la plataforma del juego."));
-		DA_ERROR.generosDisponibles();
+		//Genero.generosDisponibles(); HACER GENEROS DISPONIBLES!!
 		this.genero= Genero.dimeGenero(LecturaServicio.escribeNum("Indique el número correspondiente al género del juego."));
 		this.editor=LecturaServicio.escribeTexto("Indique el editor del juego.");
 		return new Juego(nombre, fechaPublicacion, plataforma, genero, editor);
