@@ -5,8 +5,13 @@ import java.io.Serializable;
 import lombok.Data;
 import utilidad.LecturaServicio;
 
+/**
+ * @author Grupo1 Natalia 
+ */
+
 public @Data class Juego implements Serializable{
 	
+	private static final long serialVersionUID = 1L;
 	private String nombre;
 	private int fechaPublicacion;
 	private Plataforma plataforma;
@@ -20,6 +25,10 @@ public @Data class Juego implements Serializable{
 		this.genero=genero;
 		this.editor=editor;
 	}
+
+/**
+* Este método pregunta al usuario los atributos de un juego.
+*/	
 	
 	public Juego crearJuego() {
 		this.nombre=LecturaServicio.escribeTexto("Indique el nombre del juego.");
@@ -29,6 +38,7 @@ public @Data class Juego implements Serializable{
 		Genero.generosDisponibles();
 		this.genero=Genero.dimeGenero(LecturaServicio.escribeNum("Indique el número correspondiente al género del juego."));
 		this.editor=LecturaServicio.escribeTexto("Indique el editor del juego.");
+		return new Juego(nombre, fechaPublicacion, plataforma, genero, editor);
 	}
 	
 }
