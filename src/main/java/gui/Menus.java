@@ -11,7 +11,6 @@ public class Menus {
 	
 	public static void imprimirMenu() {
 		
-		
 		System.out.println(" //¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\");
 		System.out.println(" |			   *Escoge una opcion:   			  |");  
 		System.out.println(" |			 1. Dar de alta un juego.  			  |");
@@ -19,6 +18,7 @@ public class Menus {
 		System.out.println(" |			 3. Ver listas específicas.  		  |");
 		System.out.println(" |           0. Salir                             |");
 		System.out.println(" \\______________________________________________//");
+
 	}
 	
 	/**
