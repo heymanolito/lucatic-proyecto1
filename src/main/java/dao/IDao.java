@@ -13,43 +13,43 @@ public interface IDao {
 	 * 
 	 * @param juego juego que voy a dar de alta
 	 */
-	public void altaJuego(Juego juego);
+	void altaJuego(Juego juego);
 	
 	/**
 	 * 
 	 * @param juego juego que voy a dar de baja
 	 */
-	public void bajaJuego(Juego juego);
+	void bajaJuego(Juego juego);
 	
 	/**
 	 * 
 	 * @param id del juego a modificar
 	 */
-	public void modificarJuego(Integer id);
+	void modificarJuego(Integer id);
 	
 	/**
 	 * facilita la lectura del archivo CVS
 	 */
-	public void leer();
+	void leer(String fichero);
 	
 	/**
 	 * Mostramos la informacion 
 	 */
-	public void listarTodo();
+	void listarTodo();
 	
 	/**
 	 * Borramos toda la informacion
 	 */
-	public void borrarTodo();
+	void borrarTodo();
 	
 	/**
 	 * Serializamos la informacion del archivo
 	 */
-	public void serializar();
+	void serializar(String fichero);
 	
 	/**
 	 * Deserializamos la informacion del archivo
 	 */
-	public void deserializar();
+	void deserializar(String fichero);
 	
 }
