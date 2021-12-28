@@ -10,40 +10,6 @@ import modelo.Juego;
  * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes
  *
  */
-<<<<<<< HEAD
-public class DaoJuegosImpl implements IDao{
-
-	private Map <Integer, Juego> lista = new HashMap<>();
-	
-	public void altaJuego(Juego juego) {
-		
-	}
-	public void bajaJuego(Juego juego) {
-		
-	}
-	public void modificarJuego(Integer id) {
-		
-	}
-	
-	public void leer() {
-		
-	}
-	
-	public void listarTodo() {
-
-	}
-	
-	public void borrarTodo() {
-		
-	}
-	
-	public void serializar() {
-		
-	}
-	
-	public void deserializar() {
-		
-=======
 public class DaoJuegosImpl implements IDao {
 
 	private final Map <Integer, Juego> lista = new HashMap<>();
@@ -96,13 +62,12 @@ public class DaoJuegosImpl implements IDao {
 
 	@Override
 	public void serializar(String fichero) {
-
-
+		
 	}
 
 	@Override
 	public void deserializar(String fichero) {
 
->>>>>>> 404f3fa (Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().)
+
 	}
 }

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fichero/fichero.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640688699449</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640691665604</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640691665604</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640692195691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640692195691</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
