@@ -18,7 +18,7 @@ public @Data class DaoJuegosImpl implements IDao {
 
 	private Map <Integer, Juego> lista = new HashMap<>();
 
-
+	
 	@Override
 	public void altaJuego(Juego juego) {
 
@@ -65,8 +65,8 @@ public @Data class DaoJuegosImpl implements IDao {
 
 		for (Integer juego : lista.keySet()) {
 			
-	        System.out.println("Nombre: " + lista.get(juego));
-	        System.out.println("Fecha de publicación: " + lista.get(juego).getfechaPubliacion());
+	        System.out.println("Nombre: " + lista.get(juego).getNombre());
+	        System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPubliacion());
 	        System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
 	        System.out.println("Género: " + lista.get(juego).getGenero());
 	        System.out.println("Editor: " + lista.get(juego).getEditor()); 
