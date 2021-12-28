@@ -1,5 +1,6 @@
 package modelo;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
@@ -15,7 +16,11 @@ import lombok.AccessLevel;
 
 public @Data class Juego implements Serializable{
 	
+<<<<<<< HEAD
 
+=======
+	@Serial
+>>>>>>> 654bceb0dea9f8fac80690ea42f43599031461c4
 	private static final long serialVersionUID = 1L;
 	private String nombre;
 	private int fechaPublicacion;
@@ -32,9 +37,13 @@ public @Data class Juego implements Serializable{
 		this.editor=editor;
 	}
 
-/**
-* Este método pregunta al usuario los atributos de un juego.
-*/	
+	public Juego() {
+
+	}
+
+	/**
+	* Este método pregunta al usuario los atributos de un juego.
+	*/
 	
 	public Juego crearJuego() {
 		this.nombre=LecturaServicio.escribeTexto("Indique el nombre del juego.");
