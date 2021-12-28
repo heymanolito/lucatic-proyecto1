@@ -1,23 +1,27 @@
 package dao;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import lombok.Data;
-import modelo.Genero;
+import com.opencsv.CSVParser;
+import com.opencsv.CSVParserBuilder;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import modelo.Juego;
-import modelo.Plataforma;
 
 /**
  * 
  * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes, Natalia, Jaume
  *
  */
-public @Data class DaoJuegosImpl implements IDao {
+public class DaoJuegosImpl implements IDao {
 
 	private Map <Integer, Juego> lista = new HashMap<>();
 
+<<<<<<< HEAD
 	/**
 	 * Genera un número aleatorio mayor que los del ficheroCSV.
 	 * @return Integer id
@@ -35,6 +39,9 @@ public @Data class DaoJuegosImpl implements IDao {
 	 * @param Juego juego
 	 *
 	 */	
+=======
+
+>>>>>>> de679fb (Nuevos cambios)
 	@Override
 	public void altaJuegoNuevo(Juego juego) {
 		lista.put(darCodigoAleatorio(), juego.crearJuego());		
@@ -44,7 +51,7 @@ public @Data class DaoJuegosImpl implements IDao {
 	public void bajaJuego(Juego juego) {
 
 	}
-	
+
 	@Override
 	public void modificarJuego(Integer id) {
 
@@ -56,20 +63,20 @@ public @Data class DaoJuegosImpl implements IDao {
 	 */
 	@Override
 	public void leer(String fichero) {
-		BufferedReader br;
-		String linea;
-		File f;
-		try {
-			f = new File(fichero);
-			br = new BufferedReader(new FileReader(f));
-			while((linea = br.readLine())!=null) {
-				String[] valores;
-				if(linea.equals("&#34;")) {
-					valores = linea.split("&#34;");
-				} else {
-					valores = linea.split(",");
-				}
-				System.out.println(valores[0]);
+		List<String> records = new ArrayList<>();
+		try (BufferedReader br = new BufferedReader(new FileReader(fichero))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				String[] values = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
+
+				System.out.print(values[0] + " ");
+				System.out.print(values[1] + " ");
+				System.out.print(values[2] + " ");
+				System.out.print(values[3] + " ");
+				System.out.print(values[4] + " ");
+				System.out.print(values[5] + " ");
+				System.out.println(" ");
+
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -79,6 +86,7 @@ public @Data class DaoJuegosImpl implements IDao {
 	@Override
 	public void listarTodo() {
 
+<<<<<<< HEAD
 		for (Integer juego : lista.keySet()) {
 			
 	        System.out.println("Nombre: " + lista.get(juego).getNombre());
@@ -88,6 +96,8 @@ public @Data class DaoJuegosImpl implements IDao {
 	        System.out.println("Editor: " + lista.get(juego).getEditor()); 
 	        System.out.println();
 	    }
+=======
+>>>>>>> de679fb (Nuevos cambios)
 	}
 
 	@Override
