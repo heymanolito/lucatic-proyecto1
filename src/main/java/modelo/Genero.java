@@ -3,9 +3,8 @@ package modelo;
 /**
  * @author Grupo1 Natalia buscar generos y Jaume crear métodos
  */
-import lombok.Data;
 
-public  enum Genero {
+public enum Genero {
 	
 	
 	Action(1),
@@ -27,7 +26,7 @@ public  enum Genero {
 	private Genero(int id) {
 		this.id=id;
 	}
-	
+
 	public int getInt() {
 		return id;
 	}
@@ -55,35 +54,23 @@ public  enum Genero {
 	 */
 		public static Genero dimeGenero(int id) {
 			System.out.println("Para el id: " + id);
-			switch (id) {
-			case 1:
-				return Genero.Action;
-			case 2:
-				return Genero.Adventure;
-			case 3: 
-				return Genero.Fighting;
-			case 4: 
-				return Genero.Misc;	
-			case 5:
-				return Genero.Platform;
-			case 6:
-				return Genero.Puzzle;
-			case 7:
-				return Genero.Racing;
-			case 8:
-				return Genero.RolePlaying;
-			case 9: 
-				return Genero.Shooter;
-			case 10: 
-				return Genero.Simulation;	
-			case 11:
-				return Genero.Sports;
-			case 12:
-				return Genero.Strategy;
-			}
-			return null;
-		
-	}
+			return switch (id) {
+				case 1 -> Genero.Action;
+				case 2 -> Genero.Adventure;
+				case 3 -> Genero.Fighting;
+				case 4 -> Genero.Misc;
+				case 5 -> Genero.Platform;
+				case 6 -> Genero.Puzzle;
+				case 7 -> Genero.Racing;
+				case 8 -> Genero.RolePlaying;
+				case 9 -> Genero.Shooter;
+				case 10 -> Genero.Simulation;
+				case 11 -> Genero.Sports;
+				case 12 -> Genero.Strategy;
+				default -> null;
+			};
+
+		}
 	
 }
 

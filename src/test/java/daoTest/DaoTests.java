@@ -36,9 +36,10 @@ public class DaoTests {
     }
 
     @Test
-    @DisplayName("Prueba serialización lista")
-    void testSerializarLista(){
-        dao.serializar("fichero.csv");
+    @DisplayName("Listar fichero CSV")
+    void testListadoFichero() {
+        dao.leer("fichero.csv");
+        dao.listarTodo();
     }
 
 
