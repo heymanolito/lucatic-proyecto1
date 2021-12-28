@@ -70,6 +70,7 @@ public @Data class DaoJuegosImpl implements IDao {
 	        System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
 	        System.out.println("Género: " + lista.get(juego).getGenero());
 	        System.out.println("Editor: " + lista.get(juego).getEditor()); 
+	        System.out.println();
 	    }
 	}
 
