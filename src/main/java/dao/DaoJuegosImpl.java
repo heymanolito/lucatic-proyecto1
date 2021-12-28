@@ -3,6 +3,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
+import lombok.Data;
 import modelo.Juego;
 
 /**
@@ -10,7 +11,7 @@ import modelo.Juego;
  * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes
  *
  */
-public class DaoJuegosImpl implements IDao {
+public @Data class DaoJuegosImpl implements IDao {
 
 	private final Map <Integer, Juego> lista = new HashMap<>();
 
@@ -53,6 +54,10 @@ public class DaoJuegosImpl implements IDao {
 	@Override
 	public void listarTodo() {
 
+		for(int i=0; i<lista.size()-1; i++) {
+			
+			System.out.println(lista);
+		}
 	}
 
 	@Override
