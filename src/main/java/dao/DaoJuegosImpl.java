@@ -1,9 +1,15 @@
 package dao;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
+import com.opencsv.CSVParser;
+import com.opencsv.CSVParserBuilder;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import modelo.Juego;
 
 /**
@@ -37,20 +43,20 @@ public class DaoJuegosImpl implements IDao {
 	 */
 	@Override
 	public void leer(String fichero) {
-		BufferedReader br;
-		String linea;
-		File f;
-		try {
-			f = new File(fichero);
-			br = new BufferedReader(new FileReader(f));
-			while((linea = br.readLine())!=null) {
-				String[] valores;
-				if(linea.equals("&#34;")) {
-					valores = linea.split("&#34;");
-				} else {
-					valores = linea.split(",");
-				}
-				System.out.println(valores[0]);
+		List<String> records = new ArrayList<>();
+		try (BufferedReader br = new BufferedReader(new FileReader(fichero))) {
+			String line;
+			while ((line = br.readLine()) != null) {
+				String[] values = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
+
+				System.out.print(values[0] + " ");
+				System.out.print(values[1] + " ");
+				System.out.print(values[2] + " ");
+				System.out.print(values[3] + " ");
+				System.out.print(values[4] + " ");
+				System.out.print(values[5] + " ");
+				System.out.println(" ");
+
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
