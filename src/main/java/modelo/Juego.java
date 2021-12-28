@@ -3,16 +3,19 @@ package modelo;
 import java.io.Serializable;
 
 import lombok.Data;
+import lombok.Setter;
 import utilidad.LecturaServicio;
+import lombok.AccessLevel;
 
 /**
  * @author Grupo1 Natalia 
  */
 
+
 public @Data class Juego implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
-	private String nombre;
+	@Setter private String nombre;
 	private int fechaPublicacion;
 	private Plataforma plataforma;
 	private Genero genero;
@@ -39,6 +42,8 @@ public @Data class Juego implements Serializable{
 		this.genero=Genero.dimeGenero(LecturaServicio.escribeNum("Indique el número correspondiente al género del juego."));
 		this.editor=LecturaServicio.escribeTexto("Indique el editor del juego.");
 		return new Juego(nombre, fechaPublicacion, plataforma, genero, editor);
+		
+		
 	}
 	
 }

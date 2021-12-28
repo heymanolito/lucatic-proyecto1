@@ -5,7 +5,9 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 import lombok.Data;
+import modelo.Genero;
 import modelo.Juego;
+import modelo.Plataforma;
 
 /**
  * 
@@ -26,7 +28,7 @@ public @Data class DaoJuegosImpl implements IDao {
 	public void bajaJuego(Juego juego) {
 
 	}
-
+	
 	@Override
 	public void modificarJuego(Integer id) {
 
@@ -61,10 +63,14 @@ public @Data class DaoJuegosImpl implements IDao {
 	@Override
 	public void listarTodo() {
 
-		for(int i=0; i<lista.size()-1; i++) {
+		for (Integer juego : lista.keySet()) {
 			
-			System.out.println(lista);
-		}
+	        System.out.println("Nombre: " + lista.get(juego));
+	        System.out.println("Fecha de publicación: " + lista.get(juego).getfechaPubliacion());
+	        System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
+	        System.out.println("Género: " + lista.get(juego).getGenero());
+	        System.out.println("Editor: " + lista.get(juego).getEditor()); 
+	    }
 	}
 
 	@Override
