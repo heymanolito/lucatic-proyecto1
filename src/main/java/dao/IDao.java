@@ -13,19 +13,19 @@ public interface IDao {
 	 * 
 	 * @param juego juego que voy a dar de alta
 	 */
-	public void alta(Juego juego);
+	public void altaJuego(Juego juego);
 	
 	/**
 	 * 
 	 * @param juego juego que voy a dar de baja
 	 */
-	public void baja(Juego juego);
+	public void bajaJuego(Juego juego);
 	
 	/**
 	 * 
 	 * @param id del juego a modificar
 	 */
-	public void modificar(Integer id);
+	public void modificarJuego(Integer id);
 	
 	/**
 	 * facilita la lectura del archivo CVS
