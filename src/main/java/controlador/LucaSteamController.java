@@ -25,8 +25,8 @@ public class LucaSteamController {
 	public static void elegirOpcion() {
 		switch (utilidad.LecturaServicio.escribeNum()) {
 		case 1: {
-			//Dar de alta juego
-			//JuegosServicio.altaJuego();
+			
+			//JuegosServicio.altaJuego(new Juego().crearJuego());
 			break;
 		}
 		case 2:{
