@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" afterDir="false" />
+    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Nuevos cambios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fichero/fichero.csv" beforeDir="false" afterPath="$PROJECT_DIR$/fichero.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Servicios/PruebasFiltros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +140,7 @@
       <workItem from="1640629233086" duration="627000" />
       <workItem from="1640630085038" duration="424000" />
       <workItem from="1640636794903" duration="2036000" />
-      <workItem from="1640710377316" duration="3543000" />
+      <workItem from="1640710377316" duration="5734000" />
     </task>
     <task id="LOCAL-00001" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
       <created>1640685564034</created>
@@ -203,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640713910582</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Nuevos cambios">
+      <created>1640714420264</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640714420264</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,6 +226,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum()." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum()." />
+    <MESSAGE value="Nuevos cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevos cambios" />
   </component>
 </project>

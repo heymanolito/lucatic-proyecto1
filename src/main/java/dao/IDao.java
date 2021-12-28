@@ -57,6 +57,7 @@ import modelo.Juego;
 	/**
 	 * Deserializamos la informacion del archivo
 	 */
-	void deserializar(String fichero);
-	
+	void deserializar(String fichero) throws ClassNotFoundException;
+
+
 }

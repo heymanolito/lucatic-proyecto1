@@ -10,7 +10,9 @@ import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
+import modelo.Genero;
 import modelo.Juego;
+import modelo.Plataforma;
 
 /**
  * 
@@ -68,15 +70,13 @@ public class DaoJuegosImpl implements IDao {
 			String line;
 			while ((line = br.readLine()) != null) {
 				String[] values = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-
-				System.out.print(values[0] + " ");
-				System.out.print(values[1] + " ");
-				System.out.print(values[2] + " ");
-				System.out.print(values[3] + " ");
-				System.out.print(values[4] + " ");
-				System.out.print(values[5] + " ");
-				System.out.println(" ");
-
+				Juego juego = new Juego();
+				juego.setNombre(values[1]);
+				juego.setFechaPublicacion(Integer.parseInt(values[2]));
+				juego.setPlataforma(Plataforma.valueOf(values[3]));
+				juego.setGenero(Genero.valueOf(values[4]));
+				juego.setEditor(values[5]);
+				lista.put(Integer.parseInt(values[0]), juego);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -130,7 +130,7 @@ public class DaoJuegosImpl implements IDao {
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
-	public void deserializar(String fichero) {
+	public void deserializar(String fichero) throws ClassNotFoundException {
 		File f;
 		try {
 			f = new File(fichero);
@@ -140,9 +140,9 @@ public class DaoJuegosImpl implements IDao {
 			lista = (Map<Integer, Juego>) s.readObject();
 		} catch (IOException e1) {
 			e1.printStackTrace();
-		} catch (ClassNotFoundException e2) {
-			System.out.println("añadir logger");
 		}
 
 	}
+
+
 }

@@ -35,5 +35,11 @@ public class DaoTests {
 
     }
 
+    @Test
+    @DisplayName("Prueba serialización lista")
+    void testSerializarLista(){
+        dao.serializar("fichero.csv");
+    }
+
 
 }
