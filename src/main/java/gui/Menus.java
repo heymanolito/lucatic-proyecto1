@@ -4,7 +4,7 @@ public class Menus {
 	
 	public static void imprimirMenu() {
 		
-		System.out.println(" //����������������������������������������������\\ ");
+		System.out.println(" //______________________________________________\\ ");
 		System.out.println(" |			   *Escoge una opcion:   			  |");  
 		System.out.println(" |			 1. Dar de alta un juego.  			  |");
 		System.out.println(" |			 2. Ver listado de juegos.  	      |");

@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/excepciones/ExceptionPrueba.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/excepciones/ExceptionPrueba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Menus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilidad/FicheroServicio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilidad/LecturaServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilidad/LecturaServicio.java" afterDir="false" />
-    </list>
+    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum()." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +41,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
