@@ -10,10 +10,17 @@ import modelo.Juego;
 	public interface IDao {
 	
 	/**
-	 * 
-	 * @param juego juego que voy a dar de alta
+	 * voy a dar de alta un juego preguntando al usuario
+	 * @param juego juego 
 	 */
-	void altaJuego(Juego juego);
+	void altaJuegoNuevo(Juego juego);
+	
+	/**
+	 * voy a dar de alta un juego que está en el ficheroCSV
+	 * @param juego juego   
+	 */
+	void altaJuegoLista(Juego juego);
+	
 	
 	/**
 	 * 

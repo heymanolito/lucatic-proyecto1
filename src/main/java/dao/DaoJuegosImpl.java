@@ -11,17 +11,33 @@ import modelo.Plataforma;
 
 /**
  * 
- * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes
+ * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes, Natalia, Jaume
  *
  */
 public @Data class DaoJuegosImpl implements IDao {
 
 	private Map <Integer, Juego> lista = new HashMap<>();
 
+	/**
+	 * Genera un número aleatorio mayor que los del ficheroCSV.
+	 * @return Integer id
+	 */
 	
+	public Integer darCodigoAleatorio () {
+		Integer id;
+		id =(int)Math.round((Math.random() * (50000 - 16601) + 16601));
+		return id;		
+	}
+	
+	/**
+	 * Da de alta el juego que el usuario quiera, generando un código aleatorio y preguntando los
+	 * atributos del juego.
+	 * @param Juego juego
+	 *
+	 */	
 	@Override
-	public void altaJuego(Juego juego) {
-
+	public void altaJuegoNuevo(Juego juego) {
+		lista.put(darCodigoAleatorio(), juego.crearJuego());		
 	}
 
 	@Override
