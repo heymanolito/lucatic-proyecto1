@@ -1,5 +1,7 @@
 package gui;
 
+import controlador.LucaSteamController;
+
 /**
  * @author Grupo01 Jaume
  */
@@ -11,13 +13,15 @@ public class Menus {
 	
 	public static void imprimirMenu() {
 		
-		System.out.println(" //¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\\");
+		System.out.println("   ______________________________________________");
+		System.out.println(" //                                              \\");
 		System.out.println(" |			   *Escoge una opcion:   			  |");  
 		System.out.println(" |			 1. Dar de alta un juego.  			  |");
 		System.out.println(" |			 2. Ver listado de juegos.  	      |");
 		System.out.println(" |			 3. Ver listas específicas.  		  |");
 		System.out.println(" |           0. Salir                             |");
 		System.out.println(" \\______________________________________________//");
+		LucaSteamController.elegirOpcion();
 
 	}
 	

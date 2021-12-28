@@ -24,6 +24,15 @@ public class LecturaServicio {
     }
 
     /**
+     * Para introducir texto.
+     * @return String
+     */
+
+    public static String escribeTexto() {
+        return leeInput();
+    }
+
+    /**
      * Le pide al usuario que introduzca un mensaje por la terminal.
      * @param msg String
      * @return Integer
@@ -33,6 +42,17 @@ public class LecturaServicio {
         System.out.println(msg);
         return leeInputNumero();
     }
+
+    /**
+     * Para introducir números enteros.
+     * @return Integer
+     */
+
+    public static Integer escribeNum() {
+        return leeInputNumero();
+    }
+
+
     /**
      * Lee el buffer del teclado del usuario.
      * @return String
