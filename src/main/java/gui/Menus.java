@@ -1,5 +1,8 @@
 package gui;
 
+
+import org.junit.jupiter.api.Test;
+
 import controlador.LucaSteamController;
 
 /**
@@ -24,10 +27,10 @@ public class Menus {
 		LucaSteamController.elegirOpcion();
 
 	}
-	
 	/**
 	 * Este método imprime el mensaje de bienvenida
 	 */
+	@Test
 	public static void darBienvenida() {
 		System.out.println(" Bienvenido al gestor de juegos de LucaSteam "  );
 	}
@@ -35,7 +38,7 @@ public class Menus {
 	/**
 	 * Este método imprime el mensaje de despedida
 	 */
-	
+	@Test
 	public static void darDespedida() {
 		System.out.println(" Hasta la próxima ");
 	}

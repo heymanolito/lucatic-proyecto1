@@ -1,12 +1,12 @@
 package modelo;
 
-
 /**
  * @author Grupo1 Natalia buscar generos y Jaume crear métodos
  */
 import lombok.Data;
 
 public  enum Genero {
+	
 	
 	Action(1),
 	Adventure(2),
