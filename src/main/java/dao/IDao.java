@@ -7,7 +7,7 @@ import modelo.Juego;
  * @author Grupo01: Jose Manuel Molina
  *
  */
-public interface IDao {
+	public interface IDao {
 	
 	/**
 	 * 

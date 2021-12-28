@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import lombok.Data;
 import lombok.Setter;
+
 import utilidad.LecturaServicio;
 import lombok.AccessLevel;
 
@@ -14,12 +15,14 @@ import lombok.AccessLevel;
 
 public @Data class Juego implements Serializable{
 	
+
 	private static final long serialVersionUID = 1L;
 	@Setter private String nombre;
 	private int fechaPublicacion;
 	private Plataforma plataforma;
 	private Genero genero;
 	private String editor;
+	
 	
 	public Juego (String nombre, int fechaPublicacion, Plataforma plataforma, Genero genero, String editor) {
 		this.nombre=nombre;
