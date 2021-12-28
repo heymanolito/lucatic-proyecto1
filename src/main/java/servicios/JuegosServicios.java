@@ -8,7 +8,7 @@ import modelo.Juego;
 public class JuegosServicios implements IJuegosServicio{
 
 
-public void altaJuego(Juego juego) {
+	public void altaJuego(Juego juego) {
 		
 	}
 	public void bajaJuego(Juego juego) {
