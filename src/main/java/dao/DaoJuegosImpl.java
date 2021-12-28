@@ -2,6 +2,7 @@ package dao;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import modelo.Juego;
 
@@ -12,7 +13,7 @@ import modelo.Juego;
  */
 public class DaoJuegosImpl implements IDao {
 
-	private final Map <Integer, Juego> lista = new HashMap<>();
+	private Map <Integer, Juego> lista = new HashMap<>();
 
 
 	@Override
@@ -30,12 +31,18 @@ public class DaoJuegosImpl implements IDao {
 
 	}
 
+	/**
+	 * Lee el fichero
+	 * @param fichero String
+	 */
 	@Override
 	public void leer(String fichero) {
 		BufferedReader br;
 		String linea;
+		File f;
 		try {
-			br = new BufferedReader(new FileReader((fichero)));
+			f = new File(fichero);
+			br = new BufferedReader(new FileReader(f));
 			while((linea = br.readLine())!=null) {
 				String[] valores;
 				if(linea.equals("&#34;")) {
@@ -60,14 +67,44 @@ public class DaoJuegosImpl implements IDao {
 
 	}
 
+	/**
+	 * Serializa la lista.
+	 * @param fichero String
+	 */
+
 	@Override
 	public void serializar(String fichero) {
-		
+		File f;
+		try {
+			f = new File(fichero);
+			FileOutputStream fos = new FileOutputStream(f);
+			ObjectOutputStream s = new ObjectOutputStream(fos);
+			s.writeObject(lista);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
 	}
 
+	/**
+	 * Deserializa la lista.
+	 * @param fichero String
+	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void deserializar(String fichero) {
+		File f;
+		try {
+			f = new File(fichero);
+			ObjectInputStream s = new ObjectInputStream(
+					new FileInputStream(f));
 
+			lista = (Map<Integer, Juego>) s.readObject();
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		} catch (ClassNotFoundException e2) {
+			System.out.println("añadir logger");
+		}
 
 	}
 }
