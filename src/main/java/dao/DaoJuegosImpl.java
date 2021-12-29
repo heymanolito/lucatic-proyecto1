@@ -6,15 +6,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-<<<<<<< HEAD
 import lombok.Data;
 import modelo.Genero;
-=======
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
->>>>>>> 654bceb0dea9f8fac80690ea42f43599031461c4
+
 import modelo.Juego;
 import modelo.Plataforma;
 

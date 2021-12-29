@@ -16,11 +16,6 @@ import lombok.AccessLevel;
 
 public @Data class Juego implements Serializable{
 	
-<<<<<<< HEAD
-
-=======
-	@Serial
->>>>>>> 654bceb0dea9f8fac80690ea42f43599031461c4
 	private static final long serialVersionUID = 1L;
 	private String nombre;
 	private int fechaPublicacion;
