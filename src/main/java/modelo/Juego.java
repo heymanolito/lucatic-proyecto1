@@ -48,6 +48,8 @@ public @Data class Juego {
 
 	/**
 	 * Método que pregunta al usuario los atributos del juego para crearlo.
+	 * 
+	 * @return juego devuelve un juego nuevo, preguntado al usuario.
 	 */
 
 	public Juego crearJuego() {

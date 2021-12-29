@@ -5,7 +5,7 @@ package controlador;
  * Fecha: 29/12/21.
  * 
  * @version LucaSteam1.0.0
- * @author Grupo1 Natalia Borrego Lopez
+ * @author Grupo1 Jaume Subirats Martin
  */
 
 public class Main {

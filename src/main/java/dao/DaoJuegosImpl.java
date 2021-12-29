@@ -1,23 +1,36 @@
 package dao;
-import java.io.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import lombok.Data;
 import modelo.Genero;
-
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import modelo.Juego;
 import modelo.Plataforma;
 
 /**
+ * Nombre de la clase: DaoJuegoImpl. Descripcion: En esta clase se genera y
+ * trabaja con HashMap con un código y un juego. Fecha: 29/12/21.
  * 
- * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes, Natalia, Jaume
- * @inheritDoc
+ * @version LucaSteam1.0.0
+ * @author Grupo1 Natalia Borrego Lopez, Jose Manuel Molina Llamas, Manuel Gallardo
+ *         Fuentes y Jaume Subirats Martin
  */
 
 public @Data class DaoJuegosImpl implements IDao {
 
 	private Map<Integer, Juego> lista = new HashMap<>();
+
+	/**
+	 * Genera un ID aleatorio superior a 16600 (código máximo en el CSV aportado).
+	 * 
+	 * @return id Corresponde a un ID aleatorio para un nuevo juego.
+	 */
 
 	public Integer darCodigoAleatorio() {
 		int id;
@@ -25,12 +38,21 @@ public @Data class DaoJuegosImpl implements IDao {
 		return id;
 	}
 
+	/**
+	 * Pregunta al usuario para crear un juego con los atributos que elija.
+	 * 
+	 * @return boolean
+	 */
+
 	@Override
 	public boolean altaJuegoNuevo(Juego juego) {
 		lista.put(darCodigoAleatorio(), juego);
 		return true;
 	}
 
+	/**
+	 * Este metodo genera un mapa a partir de un fichero CSV.
+	 */
 
 	@Override
 	public void cargarCSV(String fichero) {
@@ -51,12 +73,18 @@ public @Data class DaoJuegosImpl implements IDao {
 		}
 	}
 
+	/**
+	 * Este metodo imprime los juegos dentro de un mapa.
+	 * 
+	 * @return cont contador para comprobar el numero de juegos de la lista.
+	 */
+
 	@Override
 	public int listarTodo() {
 
 		int cont = 0;
 
-		for ( Integer juego : lista.keySet() ) {
+		for (Integer juego : lista.keySet()) {
 			System.out.println("Nombre: " + lista.get(juego).getNombre());
 			System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
 			System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
@@ -70,10 +98,20 @@ public @Data class DaoJuegosImpl implements IDao {
 
 	}
 
+	/**
+	 * Constructor vacio de la clase DaoJuegosImpl.
+	 * 
+	 */
 
 	public Map<Integer, Juego> getLista() {
 		return lista;
 	}
+
+	/**
+	 * Metodo que devuelve un array con todas las plataformas.
+	 * 
+	 * @return List<Plataforma> Lista que contiene las plataformas en un array.
+	 */
 
 	public List<Plataforma> listaPlataformas() {
 		return new ArrayList<>(Arrays.asList(Plataforma.values()));

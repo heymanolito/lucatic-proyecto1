@@ -1,31 +1,33 @@
 package servicios;
 
 /**
+ * Nombre de la interfaz: IJuegosServicio. Descripcion: Interfaz que genera los
+ * metodos basicos para los servicios de juegos. Fecha: 29/12/21.
  * 
- * @author Grupo01: Jose Manuel Molina
- *
+ * @version LucaSteam1.0.0
+ * @author Grupo1 Jose Manuel Molina Llamas
  */
+
 public interface IJuegosServicio {
 
 	/**
-	 * voy a dar de alta un juego preguntando al usuario
-	 * @param juego juego
+	 * Metodo que da de alta un juego.
+	 * 
+	 * @return boolean
 	 */
 
 	boolean altaJuegoNuevo();
 
-
-	/*
-	*
-	 * facilita la lectura del archivo CVS
+	/**
+	 * Permite la lectura del archivo CVS.
 	 */
+
 	void cogeCSV();
 
 	/**
-	 * Mostramos la informacion
+	 * Metodo que muestra informacion.
 	 */
-	void listarTodo();
 
-	
+	void listarTodo();
 
 }

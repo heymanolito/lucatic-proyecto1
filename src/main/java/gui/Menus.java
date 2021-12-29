@@ -1,16 +1,18 @@
 package gui;
 
-
-import controlador.LucaSteamController;
-
 /**
- * @author Grupo01 Jaume
+ * Nombre de la clase: Menus. Descripcion: Interfaz graficaº. Fecha: 29/12/21.
+ * 
+ * @version LucaSteam1.0.0
+ * @author Grupo1 Jaume Subirats Martin
  */
+
 public class Menus {
 
 	/**
-	 * Este metodo imprime el menu y todas sus opciones
-	 * @return el menu en string para poder hacerle el test
+	 * Metodo que imprime el menu y todas sus opciones
+	 * 
+	 * @return menuEntero String para test
 	 */
 	
 	public static String imprimirMenu() {
@@ -40,8 +42,9 @@ public class Menus {
 	}
 	
 	/**
-	 * Este metodo imprime el submenu de listas especificas y todas sus opciones
-	 * @return el menu en string para poder hacer el test
+	 * Metodo que imprime el submenu de listas especificas y todas sus opciones
+	 * 
+	 * @return menu2 String para test
 	 */
 	
 	public static String listasEspecificas() {
@@ -64,7 +67,7 @@ public class Menus {
 		System.out.println(" |      3. Dar listado de editores disponibles.                |");
 		System.out.println(" |      4. Dar listado de los juegos del siglo XX.             |");
 		System.out.println(" |      0. Salir.                                              |");
-		System.out.println(" \\____________________________________________________________ /");
+		System.out.println(" \\____________________________________________________________/");
 		
 		return menu2;
 	}
@@ -73,22 +76,26 @@ public class Menus {
 	
 	
 	/**
-	 * Este mï¿½todo imprime el mensaje de bienvenida
-	 * @return 
+	 * Metodo que imprime el mensaje de bienvenida.
+	 * 
+	 * @return bienvenida  
 	 */
 
 	public static String darBienvenida() {
-		String bienvenida =" Bienvenido al gestor de juegos de LucaSteam ";
+		String bienvenida ="  ---- Bienvenido al gestor de juegos de LucaSteam ----";
 		System.out.println(bienvenida  );
 		return bienvenida;
 	}
 
 	/**
-	 * Este mï¿½todo imprime el mensaje de despedida
+	 * Metodo que imprime el mensaje de despedida.
+	 * 
+	 * @return despedida  
 	 */
 
 	public static String darDespedida() {
-		String despedida = " Hasta la proxima ";
+		
+		String despedida = "  ------------------ Hasta la proxima ------------------";
 		System.out.println(despedida);
 		return despedida;
 	}

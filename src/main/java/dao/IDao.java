@@ -3,27 +3,34 @@ package dao;
 import modelo.Juego;
 
 /**
+ * Nombre de la interfaz: IDao. Descripcion: Interfaz que genera los metodos
+ * basicos DAO. Fecha: 29/12/21.
  * 
- * @author Grupo01: Jose Manuel Molina
- *
+ * @version LucaSteam1.0.0
+ * @author Grupo1 Jose Manuel Molina Llamas
  */
-	public interface IDao {
-	
+public interface IDao {
+
 	/**
-	 * voy a dar de alta un juego preguntando al usuario
-	 * @param juego juego 
+	 * Metodo que da de alta un juego.
+	 * 
+	 * @param juego
+	 * @return boolean
 	 */
 	boolean altaJuegoNuevo(Juego juego);
 
 	/**
-	 * facilita la lectura del archivo CVS
+	 * Permite la lectura del archivo CVS.
+	 * 
+	 * @param fichero Fichero CSV
 	 */
 	void cargarCSV(String fichero);
-	
+
 	/**
-	 * Mostramos la informacion 
+	 * Metodo que muestra informacion.
+	 * 
+	 * @return int
 	 */
 	int listarTodo();
-
 
 }

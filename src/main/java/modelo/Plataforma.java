@@ -1,7 +1,11 @@
 package modelo;
 
 /**
- * @author Grupo1 Natalia
+ * Nombre del enumerado: Plataforma. Descripcion: Enumerado que contiene las plataformas
+ * de los juegos y metodos para trabajar con ellos. Fecha: 29/12/21.
+ * 
+ * @version LucaSteam1.0.0
+ * @author Grupo1 Natalia Borrego Lopez
  */
 
 public enum Plataforma {
@@ -13,10 +17,20 @@ public enum Plataforma {
 	private final int id;
 	private static final int size = Plataforma.values().length;
 
+	/**
+	 * Constructor vacio del enumerado Plataforma.
+	 * 
+	 * @param id
+	 */
+	
 	Plataforma(int id) {
 		this.id = id;
 	}
 
+	/**
+	 * Getters
+	 */
+	
 	public int getId() {
 		return id;
 	}
@@ -25,6 +39,13 @@ public enum Plataforma {
 		return size;
 	}
 
+	/**
+	 * Metodo que devuelve la Plataforma escrito como String.
+	 * 
+	 * @param plataforma String de la plataforma que se quiere obtener
+	 * @return Plataforma obtenido de convertir el String a Plataforma
+	 */
+	
 	public static Plataforma escogePlataforma(String str) {
 		return switch (str) {
 		case "3DS" -> _3DS;
@@ -35,8 +56,9 @@ public enum Plataforma {
 	}
 
 	/**
-	 * @param id int
-	 * @return plataforma de la id
+	 * Metodo que devuelve una plataforma en funcion de su ID.
+	 * 
+	 * @return Plataforma
 	 */
 
 	public static Plataforma dimePlataforma(int id) {
@@ -109,7 +131,9 @@ public enum Plataforma {
 	}
 
 	/**
-	 * Este método dice las plataformas que existen
+	 * Metodo que devuelve una lista de de todos las plataformas disponibles.
+	 * 
+	 * @return contad Contador para testear.
 	 */
 
 	public static int plataformasDisponibles() {
