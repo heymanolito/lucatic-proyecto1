@@ -1,9 +1,9 @@
 package dao;
 import java.io.*;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+
+import modelo.DA_ERROR;
 import modelo.Genero;
 import modelo.Juego;
 import modelo.Plataforma;
@@ -23,7 +23,7 @@ public class DaoJuegosImpl implements IDao {
 	 */
 	
 	public Integer darCodigoAleatorio () {
-		Integer id;
+		int id;
 		id = (int) Math.round((Math.random() * (50000 - 16601) + 16601));
 		return id;		
 	}
@@ -31,7 +31,7 @@ public class DaoJuegosImpl implements IDao {
 	/**
 	 * Da de alta el juego que el usuario quiera, generando un código aleatorio y preguntando los
 	 * atributos del juego.
-	 * @param Juego juego
+	 * @param juego Juego
 	 *
 	 */	
 
@@ -60,7 +60,7 @@ public class DaoJuegosImpl implements IDao {
 	 * @param fichero String
 	 */
 	@Override
-	public void leer(String fichero) {
+	public void cargarCSV(String fichero) {
 		try (BufferedReader br = new BufferedReader(new FileReader(fichero))) {
 			String line;
 			while ((line = br.readLine()) != null) {
@@ -69,7 +69,7 @@ public class DaoJuegosImpl implements IDao {
 				juego.setNombre(values[1]);
 				juego.setPlataforma(Plataforma.escogePlataforma(values[2]));
 				juego.setFechaPublicacion(values[3]);
-				juego.setGenero(Genero.valueOf(values[4]));
+				juego.setGenero(Genero.escogeGenero(values[4]));
 				juego.setEditor(values[5]);
 				lista.put(Integer.parseInt(values[0]), juego);
 			}

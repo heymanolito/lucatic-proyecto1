@@ -16,7 +16,7 @@ import modelo.Juego;
 	void altaJuegoNuevo(Juego juego);
 	
 	/**
-	 * voy a dar de alta un juego que está en el ficheroCSV
+	 * voy a dar de alta un juego que estï¿½ en el ficheroCSV
 	 * @param juego juego   
 	 */
 	void altaJuegoLista(Juego juego);
@@ -37,7 +37,7 @@ import modelo.Juego;
 	/**
 	 * facilita la lectura del archivo CVS
 	 */
-	void leer(String fichero);
+	void cargarCSV(String fichero);
 	
 	/**
 	 * Mostramos la informacion 

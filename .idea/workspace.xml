@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Nuevos cambios">
+      <change afterPath="$PROJECT_DIR$/src/main/java/modelo/DA_ERROR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Menus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Genero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Plataforma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Plataforma.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,13 +85,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,7 +165,8 @@
       <workItem from="1640629233086" duration="627000" />
       <workItem from="1640630085038" duration="424000" />
       <workItem from="1640636794903" duration="2036000" />
-      <workItem from="1640710377316" duration="10216000" />
+      <workItem from="1640710377316" duration="10242000" />
+      <workItem from="1640761704767" duration="4745000" />
     </task>
     <task id="LOCAL-00001" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
       <created>1640685564034</created>
@@ -234,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640716233547</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Nuevos cambios">
+      <created>1640720717560</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640720717560</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
