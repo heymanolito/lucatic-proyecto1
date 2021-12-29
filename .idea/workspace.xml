@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Implementación de filtros.">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Menus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/generoTest/GeneroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/generoTest/GeneroTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/juegoTest/JuegoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/juegoTest/JuegoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/menuTest/MenusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/menuTest/MenusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/plataformaTest/PlataformaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/plataformaTest/PlataformaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -292,14 +280,7 @@
       <option name="project" value="LOCAL" />
       <updated>1640789863484</updated>
     </task>
-    <task id="LOCAL-00015" summary="Implementación de filtros.">
-      <created>1640791402802</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1640791402802</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

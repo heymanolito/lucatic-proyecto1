@@ -66,6 +66,27 @@ public class ServiciosTests {
         servicios.cogeCSV();
         System.out.println(servicios.filtroEditorPlataforma("Nintendo", "GBA"));
     }
-    
 
+    @Test
+    @DisplayName("La suma de los juegos de la plataforma Nintendo")
+    void  testSumaJuegosNintendo() {
+        servicios.cogeCSV();
+        long juegosNintendo = servicios.filtroEditor("Nintendo").size();
+
+        long juegosGBA = servicios.filtroEditorPlataforma("Nintendo", "GBA").size();
+        long juegosWII= servicios.filtroEditorPlataforma("Nintendo", "Wii").size();
+        long juegosNES= servicios.filtroEditorPlataforma("Nintendo", "NES").size();
+        long juegosDS= servicios.filtroEditorPlataforma("Nintendo", "DS").size();
+        long juegos3DS = servicios.filtroEditorPlataforma("Nintendo", "3DS").size();
+        long juegosSNES= servicios.filtroEditorPlataforma("Nintendo", "SNES").size();
+        long juegosN64= servicios.filtroEditorPlataforma("Nintendo", "N64").size();
+        long juegosGC= servicios.filtroEditorPlataforma("Nintendo", "GC").size();
+        long juegosGB= servicios.filtroEditorPlataforma("Nintendo", "GB").size();
+        long juegosWiiU= servicios.filtroEditorPlataforma("Nintendo", "WiiU").size();
+
+        int count = (int) (juegosGBA + juegosWII + juegosNES + juegosDS + juegos3DS + juegosSNES +
+                        juegosN64 + juegosGC + juegosGB + juegosWiiU);
+
+        Assertions.assertEquals(juegosNintendo, count);
+    }
 }
