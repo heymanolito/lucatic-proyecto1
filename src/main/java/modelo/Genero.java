@@ -15,9 +15,12 @@ public enum Genero {
     Sports(11),
     Strategy(12);
 
-    Genero(int i) {
-    }
-
+    private final int id;
+    private static final int size = Genero.values().length;
+    private Genero (int id) {
+		this.id=id;
+	}
+    
     public static Genero escogeGenero(String str) {
 
         return switch (str) {
@@ -44,4 +47,13 @@ public enum Genero {
             default -> null;
         };
     }
+    
+    public int getId() {
+		return id;
+	}
+    
+    public static int getSize() {
+		return size;
+	}
+
 }

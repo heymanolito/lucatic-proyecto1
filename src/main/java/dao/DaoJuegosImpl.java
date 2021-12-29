@@ -2,6 +2,15 @@ package dao;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
+
+import lombok.Data;
+import modelo.Genero;
+import com.opencsv.CSVParser;
+import com.opencsv.CSVParserBuilder;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
+
 import modelo.Genero;
 import modelo.Juego;
 import modelo.Plataforma;
@@ -57,7 +66,8 @@ public class DaoJuegosImpl implements IDao {
 	public void listarTodo() {
 
 		for (Integer juego : lista.keySet()) {
-			
+		
+	        System.out.println("Nombre: " + lista.get(juego));
 	        System.out.println("Nombre: " + lista.get(juego).getNombre());
 	        System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
 	        System.out.println("Plataforma: " + lista.get(juego).getPlataforma());

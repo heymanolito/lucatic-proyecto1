@@ -4,13 +4,15 @@ import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
+import lombok.Setter;
+import lombok.Getter;
 import utilidad.LecturaServicio;
 
 /**
  * @author Grupo1 Natalia 
  */
 
-public @Data class Juego implements Serializable{
+	public @Data class Juego implements Serializable{
 	
 	@Serial
 	private static final long serialVersionUID = 1L;
