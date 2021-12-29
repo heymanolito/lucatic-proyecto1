@@ -69,7 +69,7 @@ public enum Plataforma {
      */
 
     public static Plataforma dimePlataforma(int id) {
-        System.out.println("Para el id: " + id);
+        //System.out.println("Para el id: " + id);
         switch (id) {
             case 1:
                 return Plataforma._2600;
