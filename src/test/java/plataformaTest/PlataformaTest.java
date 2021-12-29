@@ -31,4 +31,9 @@ public class PlataformaTest {
 
 			assertEquals(Plataforma.getSize(), Plataforma.values().length);
 	}
+	
+	@Test
+	public void testPlatDisponible() {
+		assertEquals(Plataforma.getSize(), Plataforma.plataformasDisponibles());
+	}
 }

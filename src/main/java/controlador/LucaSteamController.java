@@ -2,11 +2,13 @@ package controlador;
 
 import gui.Menus;
 import modelo.Genero;
+import modelo.Juego;
 import modelo.Plataforma;
 import servicios.JuegosServicios;
 import utilidad.LecturaServicio;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Grupo01 Jaume y Natalia
@@ -115,7 +117,7 @@ public class LucaSteamController {
      */
 
     public boolean stop() throws Exception {
-        String siONo = utilidad.LecturaServicio.escribeTexto("?Est? seguro? (S/N)");
+        String siONo = utilidad.LecturaServicio.escribeTexto("Confirme si quiere salir. (S/N)");
         return (siONo.toUpperCase().charAt(0) != 'S');
     }
 
@@ -131,14 +133,14 @@ public class LucaSteamController {
                 break;
             case "plataforma":
                 System.out.println("Plataformas disponibles: \n" + Arrays.asList(Plataforma.values()));
-				System.out.println(servicios.filtroPlataforma(LecturaServicio.escribeTexto(" Elija la plataforma que quieras tal y como est? escrito ")));
+				System.out.println(servicios.filtroPlataforma(LecturaServicio.escribeTexto(" Elija la plataforma que quiera tal y como est? escrito ")));
 				break;
             case "fecha de publicacion":
                 System.out.println(servicios.filtroFechaPublicacion(LecturaServicio.escribeTexto(" Elija la fecha de publicación que quiera ")));
                 break;
             case "genero":
                 System.out.println("Generos disponibles: \n" + Arrays.asList(Genero.values()));
-                System.out.println(servicios.filtroGenero(LecturaServicio.escribeTexto(" Elija el genero que quieras tal y como est? escrito ")));
+                System.out.println(servicios.filtroGenero(LecturaServicio.escribeTexto(" Elija el genero que quieras tal y como esta escrito ")));
 
                 break;
             default:
@@ -161,8 +163,10 @@ public class LucaSteamController {
      * Devuelve la lista filtrada por genero "plataforma"
      */
 
-    public void listadoGeneroPlataforma() {
+    public List<Juego> listadoGeneroPlataforma() {
+    	
         System.out.println(servicios.filtroGenero("Platform"));
+        return servicios.filtroGenero("Platform");
     }
 
     /**
@@ -178,7 +182,10 @@ public class LucaSteamController {
      */
 
     public void listadoEditores() {
-
+    	for (int i = 0; i < servicios.listarEditores().size(); i++) {
+    		System.out.println("*"+servicios.listarEditores().get(i));
+		}
+    	
     }
 
     /**
