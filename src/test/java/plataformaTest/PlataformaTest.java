@@ -1,17 +1,18 @@
 package plataformaTest;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
-
 import modelo.Plataforma;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class PlataformaTest {
 	
 	Plataforma plataforma = Plataforma.GBA;
 	Plataforma plataforma2 = Plataforma._2600;
 	//assertEquals(esperado, actual);
+
 	@Test
     @DisplayName("Prueba id")
     public void testId() {

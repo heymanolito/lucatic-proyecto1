@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/gui/Menus.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/modelo/DA_ERROR.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/modelo/Juego.java" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/main/java/modelo/Plataforma.java" charset="windows-1252" />

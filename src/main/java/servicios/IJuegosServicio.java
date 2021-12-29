@@ -28,7 +28,7 @@ public interface IJuegosServicio {
 	/**
 	 * Serializamos la informacion del archivo
 	 */
-	void serializar1();
+	void serializar();
 
 	/**
 	 * Deserializamos la informacion del archivo

@@ -1,15 +1,13 @@
 package serviciosTest;
 
-
-	import dao.DaoJuegosImpl;
-	import daoTest.DaoTests;
-	import modelo.Juego;
-	import org.apache.logging.log4j.LogManager;
-	import org.junit.jupiter.api.Assertions;
-	import org.junit.jupiter.api.BeforeEach;
-	import org.junit.jupiter.api.DisplayName;
-	import org.junit.jupiter.api.Test;
-	import servicios.JuegosServicios;
+import daoTest.DaoTests;
+import modelo.Juego;
+import org.apache.logging.log4j.LogManager;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+import servicios.JuegosServicios;
 
 import java.util.logging.Logger;
 
@@ -37,7 +35,7 @@ public class ServiciosTests {
     void testAltaNueva() {
         servicios.cogeCSV();
         int count = servicios.getDaoJuegos().getLista().size();
-        servicios.altaJuegoNuevo();
+        servicios.altaJuegoNuevo(new Juego());
         Assertions.assertEquals(count + 1, servicios.getDaoJuegos().getLista().size());
     }
 
@@ -69,6 +67,5 @@ public class ServiciosTests {
         System.out.println(servicios.filtroEditorPlataforma("Nintendo", "GBA"));
     }
     
-
 
 }

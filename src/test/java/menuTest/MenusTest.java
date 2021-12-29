@@ -1,11 +1,9 @@
 package menuTest;
 
-import static org.junit.Assert.assertEquals;
-
+import gui.Menus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-import gui.Menus;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MenusTest {
 
@@ -42,6 +40,7 @@ public class MenusTest {
 		
 	}
 
+<<<<<<< HEAD
 	@Test
 	public void testImprimirMenu() {
 		assertEquals(Menus.imprimirMenu(),testMenu);
@@ -56,4 +55,6 @@ public class MenusTest {
 
 	
 
+=======
+>>>>>>> b2fa8da (Arreglo de imports.)
 }

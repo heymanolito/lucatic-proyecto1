@@ -1,13 +1,7 @@
 package controlador;
 
-import java.util.Arrays;
-
 import gui.Menus;
-import modelo.Genero;
-import modelo.Plataforma;
 import servicios.JuegosServicios;
-
-import utilidad.LecturaServicio;
 
 /**
  * 
@@ -23,6 +17,7 @@ public class LucaSteamController {
 	 * Da la bienvenida e imprime el menú
 	 * 
 	 */
+	
 	public void start() {
 		boolean seguir = true;
 		Menus.darBienvenida();
@@ -32,29 +27,23 @@ public class LucaSteamController {
 		}
 		while (seguir);
 		Menus.darDespedida();
-
 	}
 	
 	/**
 	 * Te da a elegir una opción de las del menú
 	 * @return continuar boolean
 	 */
-
-	
-	
-		
 	public boolean elegirOpcion() {
 		boolean continuar = true;
 		try {
 			switch (utilidad.LecturaServicio.escribeNum()) {
 			case 1:
 			//Dar de alta un juego
-				servicios.altaJuegoNuevo();;
+				//servicios.altaJuego(null);;
 				break;
 			case 2:
 			//Ver listado juegos
 				servicios.listarTodo();
-				
 				break;
 			case 3:
 			//Ver listas específicas
@@ -62,7 +51,7 @@ public class LucaSteamController {
 				break;	
 			case 4:
 			//Filtra en funcion de las preferencias del usuario
-				elegirFiltro();
+				//elegirFiltro();
 				break;
 			case 0:
 			continuar = stop();
@@ -71,7 +60,6 @@ public class LucaSteamController {
 		}
 		catch (Exception e) {
 			System.out.println("Error: " + e.toString());
-
 			throw new IllegalArgumentException("No existe esa opción: " + utilidad.LecturaServicio.escribeNum());
 		}
 	return continuar;	
@@ -96,7 +84,7 @@ public class LucaSteamController {
 					break;
 			case 3:
 				//Dar listado de editores disponibles.
-					listadoEditores();
+					//listadoEditores();
 					break;
 			case 4:
 				//Dar listado de los juegos del siglo XX
@@ -122,43 +110,6 @@ public class LucaSteamController {
 	public boolean stop() throws Exception {
 		String siONo = utilidad.LecturaServicio.escribeTexto("¿Está seguro? (S/N)");
 		return (siONo.toUpperCase().charAt(0) != 'S');
-	}
-	public void elegirFiltro() {
-		
-		listadoFiltros();
-		
-		String entrada = LecturaServicio.escribeTexto(" ¿Que filtro desea elegir? ");
-		String entradaMinuscula = entrada.toLowerCase();
-		
-		switch (entradaMinuscula) {
-		case "editor": 
-			//Exception si no existe editor
-				servicios.filtroEditor(LecturaServicio.escribeTexto(" Elija el editor que quieras "));
-			break;
-		case "plataforma":
-				System.out.println("Plataformas disponibles: \n" + Arrays.asList(Plataforma.values()));
-				servicios.filtroPlataforma(LecturaServicio.escribeTexto(" Elija la plataforma que quieras tal y como está escrito "));
-			break;
-		case "fecha de publicacion":
-			
-				//servicios.filtroFechaPublicacion(LecturaServicio.escribeTexto(" Elija el año que quiera "));
-			break;
-		case "genero":
-				System.out.println("Generos disponibles: \n" + Arrays.asList(Genero.values()));
-				servicios.filtroGenero(LecturaServicio.escribeTexto(" Elija el genero que quieras tal y como está escrito "));
-			break;
-		default:
-			throw new IllegalArgumentException("No existe este filtro " + entrada);
-		}	
-	}
-	
-	public void listadoFiltros() {
-		System.out.println(" ¿Que filtro quieres elegir? \n "+
-						   " Editor\n" + 
-						   " Plataforma \n" +
-						   " Fecha de Publicacion \n" +
-						   " Genero");
-		
 	}
 
 	/**
@@ -193,5 +144,4 @@ public class LucaSteamController {
 		
 	}
 }
-	
 

@@ -1,4 +1,5 @@
 package dao;
+<<<<<<< HEAD
 import java.io.*;
 
 import java.util.HashMap;
@@ -10,10 +11,15 @@ import modelo.Genero;
 
 import java.util.*;
 
+=======
+>>>>>>> b2fa8da (Arreglo de imports.)
 
 import modelo.Genero;
 import modelo.Juego;
 import modelo.Plataforma;
+
+import java.io.*;
+import java.util.*;
 
 /**
  * 
@@ -21,9 +27,13 @@ import modelo.Plataforma;
  * @inheritDoc
  */
 
+<<<<<<< HEAD
 
 public @Data class DaoJuegosImpl implements IDao {
 
+=======
+public class DaoJuegosImpl implements IDao {
+>>>>>>> b2fa8da (Arreglo de imports.)
 
 	private Map <Integer, Juego> lista = new HashMap<>();
 

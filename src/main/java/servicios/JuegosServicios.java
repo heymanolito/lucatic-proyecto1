@@ -1,11 +1,7 @@
 package servicios;
 
 import dao.DaoJuegosImpl;
-
-import dao.IDao;
-
 import modelo.Genero;
-
 import modelo.Juego;
 import modelo.Plataforma;
 
@@ -22,10 +18,8 @@ public class JuegosServicios implements IJuegosServicio {
     DaoJuegosImpl daoJuegos = new DaoJuegosImpl();
 
     @Override
-    public boolean altaJuegoNuevo() {
-    	Juego juego = new Juego();
-    	juego.crearJuego();
-        return daoJuegos.altaJuegoNuevo(juego);
+    public void altaJuegoNuevo(Juego juego) {
+        daoJuegos.altaJuegoNuevo(juego);
     }
 
     @Override
@@ -33,7 +27,7 @@ public class JuegosServicios implements IJuegosServicio {
         daoJuegos.cargarCSV("fichero.csv");
     }
 
-    public void listarTodo1() {
+    public void listarTodo() {
         daoJuegos.listarTodo();
     }
 
@@ -42,7 +36,7 @@ public class JuegosServicios implements IJuegosServicio {
     }
 
     @Override
-    public void serializar1() {
+    public void serializar() {
         daoJuegos.serializar("fichero.data");
     }
 
@@ -55,7 +49,7 @@ public class JuegosServicios implements IJuegosServicio {
         return daoJuegos;
     }
 
-    public List<Plataforma> listaPlataformas1() {
+    public List<Plataforma> listaPlataformas() {
         return daoJuegos.listaPlataformas();
     }
 
@@ -110,61 +104,5 @@ public class JuegosServicios implements IJuegosServicio {
     }
 
 
-	private IDao stock = new DaoJuegosImpl();
-
-
-	
-	
-	
-	public void leer() {
-		
-	}
-	
-	public void listarTodo() {
-		
-		DaoJuegosImpl juegos = new DaoJuegosImpl();
-		
-		juegos.listarTodo();
-	}
-	
-	public void borrarTodo() {
-		
-	}
-	
-	
-	
-	
-	/*
-	public HashMap filtroGenero(Genero genero) {
-		
-	}
-	
-	public HashMap filtroPlataforma(Plataforma plataforma) {
-		
-	}
-	
-	public HashMap filtroFechaPublicacion(int fechaPublicacion) {
-		
-	}
-	
-	public HashMap filtroEditor(String editor) {
-		
-	}
-	
-	public HashMap filtroFechaPar() {
-		
-	}
-	
-	public HashMap filtroSigloXX() {
-		
-	}
-	public HashMap filtroEditorNintendo() {
-	
-	}
-	
-	*/
-	
-
-	
 
 }
