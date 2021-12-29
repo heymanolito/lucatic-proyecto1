@@ -23,6 +23,7 @@ public class JuegosServicios implements IJuegosServicio{
 	}
 	
 	public void listarTodo() {
+		
 		DaoJuegosImpl juegos = new DaoJuegosImpl();
 		
 		juegos.listarTodo();

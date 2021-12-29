@@ -1,11 +1,14 @@
 package daoTest;
 
 import dao.DaoJuegosImpl;
+import modelo.Genero;
 import modelo.Juego;
 import org.apache.logging.log4j.LogManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.Assert.assertEquals;
 
 import java.util.logging.Logger;
 
@@ -13,7 +16,7 @@ public class DaoTests {
 
     private static Logger logger;
     private DaoJuegosImpl dao;
-
+    private DaoJuegosImpl dao2;
 
     static {
         try {
@@ -42,5 +45,12 @@ public class DaoTests {
         dao.listarTodo();
     }
 
+    @Test
+    @DisplayName("Comprobar numero de elementos imprimidos")
+	public void testListarTodo() {
+
+		assertEquals(dao.listarTodo(), dao.getLista().size());
+		
+	}
 
 }
