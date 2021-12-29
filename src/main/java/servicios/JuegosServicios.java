@@ -1,8 +1,6 @@
 package servicios;
 
 import dao.DaoJuegosImpl;
-
-import dao.IDao;
 import modelo.Genero;
 import modelo.Juego;
 import modelo.Plataforma;
@@ -80,6 +78,18 @@ public class JuegosServicios implements IJuegosServicio {
     }
 
     /**
+     * Filtra la colección por editores
+     * @param editor String
+     * @return List
+     */
+    public List<Juego> filtroEditor(String editor) {
+        return daoJuegos.getLista().values().stream()
+                .filter(juego -> juego.getEditor().equals(editor))
+                .collect(Collectors.toList());
+    }
+
+
+    /**
      * Filtra la colección de daoJuegos por editor y por plataforma
      * @param plataforma String
      * @param editor String
@@ -88,14 +98,15 @@ public class JuegosServicios implements IJuegosServicio {
 
 
     public List<Juego> filtroEditorPlataforma(String editor, String plataforma) {
-        List<Juego> listaFiltradaPorGenero = daoJuegos.getLista().values().stream()
-                .filter(juego -> juego.getEditor().equals(editor))
-                .collect(Collectors.toList());
-
-        return listaFiltradaPorGenero.stream().filter(juego -> juego.getPlataforma()
+        return filtroEditor(editor).stream().filter(juego -> juego.getPlataforma()
                 .equals(Plataforma.escogePlataforma(plataforma)))
                 .collect(Collectors.toList());
     }
 
+	@Override
+	public void listarTodo() {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

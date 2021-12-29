@@ -55,12 +55,18 @@ public class ServiciosTests {
     }
 
     @Test
+    @DisplayName("Filtrar elementos mapa por editor")
+    void testFiltroEditor() {
+        servicios.cogeCSV();
+        System.out.println(servicios.filtroEditor("Nintendo"));
+    }
+
+    @Test
     @DisplayName("Filtrar elementos mapa por editor y luego por plataforma")
     void testFiltroEditorPlataforma() {
         servicios.cogeCSV();
         System.out.println(servicios.filtroEditorPlataforma("Nintendo", "GBA"));
     }
-
-
+    
 
 }

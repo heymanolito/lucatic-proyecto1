@@ -50,6 +50,10 @@ public class LucaSteamController {
 			//Ver listas específicas
 				listaEspecifica();
 				break;	
+			case 4:
+			//Filtra en funcion de las preferencias del usuario
+				//elegirFiltro();
+				break;
 			case 0:
 			continuar = stop();
 			break;
@@ -77,7 +81,7 @@ public class LucaSteamController {
 					break;
 			case 2:
 				//Dar listado de juegos para consolas de Nintendo
-					//listadoNintendo();
+					listadoNintendo();
 					break;
 			case 3:
 				//Dar listado de editores disponibles.
@@ -122,7 +126,7 @@ public class LucaSteamController {
 	 */
 	
 	public void listadoNintendo() {
-		
+		System.out.println(servicios.filtroEditor("Nintendo"));
 	}
 	
 	/**
