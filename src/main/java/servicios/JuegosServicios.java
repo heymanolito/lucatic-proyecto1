@@ -18,21 +18,17 @@ public class JuegosServicios implements IJuegosServicio {
     DaoJuegosImpl daoJuegos = new DaoJuegosImpl();
 
     @Override
-    public void altaJuegoNuevo(Juego juego) {
-        daoJuegos.altaJuegoNuevo(juego);
+    public void altaJuegoNuevo() {
+        daoJuegos.altaJuegoNuevo(new Juego().crearJuego());
     }
 
     @Override
     public void cogeCSV() {
         daoJuegos.cargarCSV("fichero.csv");
     }
-
+    @Override
     public void listarTodo() {
         daoJuegos.listarTodo();
-    }
-
-    public Integer darCodigoAleatorio() {
-        return daoJuegos.darCodigoAleatorio();
     }
 
     @Override
@@ -48,6 +44,11 @@ public class JuegosServicios implements IJuegosServicio {
     public DaoJuegosImpl getDaoJuegos() {
         return daoJuegos;
     }
+
+    public Integer darCodigoAleatorio() {
+        return daoJuegos.darCodigoAleatorio();
+    }
+
 
     public List<Plataforma> listaPlataformas() {
         return daoJuegos.listaPlataformas();
@@ -101,6 +102,7 @@ public class JuegosServicios implements IJuegosServicio {
         return filtroEditor(editor).stream().filter(juego -> juego.getPlataforma()
                 .equals(Plataforma.escogePlataforma(plataforma)))
                 .collect(Collectors.toList());
+
     }
 
 

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Implementación de filtros.">
+    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Arreglo de imports.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -304,7 +307,8 @@
     <MESSAGE value="Nuevos cambios" />
     <MESSAGE value="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación." />
     <MESSAGE value="Implementación de filtros." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación de filtros." />
+    <MESSAGE value="Arreglo de imports." />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglo de imports." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

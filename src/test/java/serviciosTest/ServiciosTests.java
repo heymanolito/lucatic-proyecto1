@@ -35,7 +35,7 @@ public class ServiciosTests {
     void testAltaNueva() {
         servicios.cogeCSV();
         int count = servicios.getDaoJuegos().getLista().size();
-        servicios.altaJuegoNuevo(new Juego());
+        servicios.altaJuegoNuevo();
         Assertions.assertEquals(count + 1, servicios.getDaoJuegos().getLista().size());
     }
 

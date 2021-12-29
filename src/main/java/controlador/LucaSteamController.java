@@ -2,6 +2,7 @@ package controlador;
 
 import gui.Menus;
 import servicios.JuegosServicios;
+import utilidad.LecturaServicio;
 
 /**
  * 
@@ -36,10 +37,10 @@ public class LucaSteamController {
 	public boolean elegirOpcion() {
 		boolean continuar = true;
 		try {
-			switch (utilidad.LecturaServicio.escribeNum()) {
+			switch (LecturaServicio.escribeNum()) {
 			case 1:
 			//Dar de alta un juego
-				//servicios.altaJuego(null);;
+				servicios.altaJuegoNuevo();;
 				break;
 			case 2:
 			//Ver listado juegos

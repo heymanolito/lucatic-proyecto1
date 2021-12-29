@@ -13,7 +13,11 @@ public interface IJuegosServicio {
 	 * voy a dar de alta un juego preguntando al usuario
 	 * @param juego juego
 	 */
+<<<<<<< Updated upstream
 	boolean altaJuegoNuevo();
+=======
+	void altaJuegoNuevo();
+>>>>>>> Stashed changes
 
 	/**
 	 * facilita la lectura del archivo CVS
