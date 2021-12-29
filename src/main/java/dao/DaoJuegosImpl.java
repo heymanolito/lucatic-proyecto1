@@ -36,11 +36,6 @@ public class DaoJuegosImpl implements IDao {
 		lista.put(darCodigoAleatorio(), juego.crearJuego());
 	}
 	
-	@Override
-	public void altaJuegoLista(Juego juego) {
-		// TODO Auto-generated method stub
-		
-	}
 
 
 	@Override
@@ -108,8 +103,4 @@ public class DaoJuegosImpl implements IDao {
 
 	}
 
-<<<<<<< HEAD
-	
-=======
->>>>>>> 054fd831cb3173b431e23c901959018c9ee1f610
 }
