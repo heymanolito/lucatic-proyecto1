@@ -1,11 +1,15 @@
 package dao;
 import java.io.*;
+<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
 import lombok.Data;
 import modelo.Genero;
+=======
+import java.util.*;
+>>>>>>> 800e2535d28ad7c965cda2d164450dd4d5ee8f99
 
 import modelo.Genero;
 import modelo.Juego;
@@ -16,8 +20,12 @@ import modelo.Plataforma;
  * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes, Natalia, Jaume
  * @inheritDoc
  */
+<<<<<<< HEAD
 
 public @Data class DaoJuegosImpl implements IDao {
+=======
+public class DaoJuegosImpl implements IDao {
+>>>>>>> 800e2535d28ad7c965cda2d164450dd4d5ee8f99
 
 	private Map <Integer, Juego> lista = new HashMap<>();
 
@@ -29,7 +37,7 @@ public @Data class DaoJuegosImpl implements IDao {
 
 	@Override
 	public void altaJuegoNuevo(Juego juego) {
-		lista.put(darCodigoAleatorio(), juego.crearJuego());
+		lista.put(darCodigoAleatorio(), juego);
 	}
 
 
@@ -101,4 +109,11 @@ public @Data class DaoJuegosImpl implements IDao {
 
 	}
 
+	public Map<Integer, Juego> getLista() {
+		return lista;
+	}
+
+	public List<Plataforma> listaPlataformas(){
+		return new ArrayList<>(Arrays.asList(Plataforma.values()));
+	}
 }

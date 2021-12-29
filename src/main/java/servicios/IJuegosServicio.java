@@ -10,46 +10,30 @@ import modelo.Juego;
 public interface IJuegosServicio {
 
 	/**
-	 * 
-	 * @param juego juego que voy a dar de alta
+	 * voy a dar de alta un juego preguntando al usuario
+	 * @param juego juego
 	 */
-	public void altaJuego(Juego juego);
-	
-	/**
-	 * 
-	 * @param juego juego que voy a dar de baja
-	 */
-	public void bajaJuego(Juego juego);
-	
-	/**
-	 * 
-	 * @param id del juego a modificar
-	 */
-	public void modificarJuego(Integer id);
-	
+	void altaJuegoNuevo(Juego juego);
+
 	/**
 	 * facilita la lectura del archivo CVS
 	 */
-	public void leer();
-	
+	void cogeCSV();
+
 	/**
-	 * Mostramos la informacion 
+	 * Mostramos la informacion
 	 */
-	public void listarTodo();
-	
-	/**
-	 * Borramos toda la informacion
-	 */
-	public void borrarTodo();
-	
+	void listarTodo();
+
 	/**
 	 * Serializamos la informacion del archivo
 	 */
-	public void serializar();
-	
+	void serializar();
+
 	/**
 	 * Deserializamos la informacion del archivo
 	 */
-	public void deserializar();
-	
+	void deserializar() throws ClassNotFoundException;
+
+
 }

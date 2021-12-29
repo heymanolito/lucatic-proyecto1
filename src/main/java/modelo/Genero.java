@@ -17,16 +17,45 @@ public enum Genero {
 
     private final int id;
     private static final int size = Genero.values().length;
+<<<<<<< HEAD
     private Genero (int id) {
 		this.id=id;
 	}
     
+=======
+
+    Genero(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public static int getSize() {
+        return size;
+    }
+
+>>>>>>> 800e2535d28ad7c965cda2d164450dd4d5ee8f99
     public static Genero escogeGenero(String str) {
 
         return switch (str) {
             case "Role-Playing" -> RolePlaying;
             default -> Genero.valueOf(str);
         };
+    }
+
+    public static void generosDisponibles() {
+        StringBuilder sb;
+        for ( Genero gen : Genero.values() ) {
+            sb = new StringBuilder();
+            sb.append("(").
+                    append(gen.id).
+                    append(")").
+                    append(gen).
+                    append("|");
+            System.out.println(sb);
+        }
     }
 
     public static Genero dimeGenero(int id) {

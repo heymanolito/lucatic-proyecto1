@@ -9,7 +9,8 @@ import controlador.LucaSteamController;
 public class Menus {
 
 	/**
-	 * Este metodo imprime el menï¿½ y todas sus opciones
+	 * Este metodo imprime el menu y todas sus opciones
+	 * @return el menu en string para poder hacerle el test
 	 */
 	
 	public static String imprimirMenu() {
@@ -23,18 +24,24 @@ public class Menus {
 						+ " \\______________________________________________//";
 				
 				
-		System.out.println("   ______________________________________________");
-		System.out.println(" //                                              \\");
-		System.out.println(" |			   *Escoge una opcion:   			  |");  
-		System.out.println(" |			 1. Dar de alta un juego.  			  |");
-		System.out.println(" |			 2. Ver listado de juegos.  	      |");
-		System.out.println(" |			 3. Ver listas especificas.  		  |");
-		System.out.println(" |           0. Salir                             |");
-		System.out.println(" \\______________________________________________//");
-		
+		 	System.out.println("___________________________________________________");
+	        System.out.println("  /  ________________________________________________ \\");
+	        System.out.println(" / /                                                 \\ \\");
+			System.out.println(" | |             *Escoge una opcion:                 | |");  
+			System.out.println(" | |         1. Dar de alta un juego.                | |");
+			System.out.println(" | |         2. Ver listado de juegos.               | |");
+			System.out.println(" | |         3. Ver listas especificas.              | |");
+			System.out.println(" | |         0. Salir.                               | |");
+			System.out.println(" \\ \\_________________________________________________/ /");
+			System.out.println("  \\___________________________________________________/");
 		return menuEntero;
 
 	}
+	
+	/**
+	 * Este metodo imprime el submenu de listas especificas y todas sus opciones
+	 * @return el menu en string para poder hacer el test
+	 */
 	
 public static String listasEspecificas() {
 	
@@ -49,14 +56,14 @@ public static String listasEspecificas() {
 					  + " \\____________________________________________________________//"
 				;
 		System.out.println("   ___________________________________________________________");
-		System.out.println(" //                                                 		   \\");
-		System.out.println(" |			   *Escoge una listaEspecífica:   			  		|");  
-		System.out.println(" |		1. Dar listado de juegos de género plataforma.   	 	|");
-		System.out.println(" |		2. Dar listado de juegos para consolas de Nintendo.     |");
-		System.out.println(" |		3. Dar listado de editores disponibles.  		        |");
-		System.out.println(" |		4. Dar listado de los juegos del siglo XX.  		    |");
-		System.out.println(" |      0. Salir  					                            |");
-		System.out.println(" \\____________________________________________________________//");
+		System.out.println(" /                                                             \\");
+		System.out.println(" |             *Escoge una listaEspecífica:                    |");  
+		System.out.println(" |      1. Dar listado de juegos de género plataforma.         |");
+		System.out.println(" |      2. Dar listado de juegos para consolas de Nintendo.    |");
+		System.out.println(" |      3. Dar listado de editores disponibles.                |");
+		System.out.println(" |      4. Dar listado de los juegos del siglo XX.             |");
+		System.out.println(" |      0. Salir.                                              |");
+		System.out.println(" \\____________________________________________________________ /");
 		
 		return menu2;
 
