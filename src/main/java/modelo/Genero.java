@@ -1,5 +1,6 @@
 package modelo;
 
+import excepciones.GeneroException;
 public enum Genero {
 
     Action(1),
@@ -21,6 +22,7 @@ public enum Genero {
    
 
     private Genero (int id) {
+    	
 		this.id=id;
 
     }
