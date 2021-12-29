@@ -12,8 +12,17 @@ public class Menus {
 	 * Este metodo imprime el menï¿½ y todas sus opciones
 	 */
 	
-	public static void imprimirMenu() {
-		
+	public static String imprimirMenu() {
+		String menuEntero= "  ______________________________________________"
+						+ " //                                              \\"
+						+ " |			   *Escoge una opcion:   			 |"
+						+ " |			 1. Dar de alta un juego.  			 |"
+						+ " |			 2. Ver listado de juegos.  	     |"
+						+ " |			 3. Ver listas especificas.  		 |"
+						+ " |            0. Salir                            |"
+						+ " \\______________________________________________//";
+				
+				
 		System.out.println("   ______________________________________________");
 		System.out.println(" //                                              \\");
 		System.out.println(" |			   *Escoge una opcion:   			  |");  
@@ -22,11 +31,23 @@ public class Menus {
 		System.out.println(" |			 3. Ver listas especificas.  		  |");
 		System.out.println(" |           0. Salir                             |");
 		System.out.println(" \\______________________________________________//");
+		
+		return menuEntero;
 
 	}
 	
-public static void listasEspecificas() {
-		
+public static String listasEspecificas() {
+	
+		String menu2=   "   ___________________________________________________________"
+					  + " //                                                 		   \\"
+					  + " |			   *Escoge una listaEspecífica:   			  		|"
+					  + " |		1. Dar listado de juegos de género plataforma.   	 	|"
+					  + " |		2. Dar listado de juegos para consolas de Nintendo.     |"
+					  + " |		3. Dar listado de editores disponibles.  		        |"
+					  + " |		4. Dar listado de los juegos del siglo XX.  		    |"
+					  + " |      0. Salir  					                            |"
+					  + " \\____________________________________________________________//"
+				;
 		System.out.println("   ___________________________________________________________");
 		System.out.println(" //                                                 		   \\");
 		System.out.println(" |			   *Escoge una listaEspecífica:   			  		|");  
@@ -36,6 +57,8 @@ public static void listasEspecificas() {
 		System.out.println(" |		4. Dar listado de los juegos del siglo XX.  		    |");
 		System.out.println(" |      0. Salir  					                            |");
 		System.out.println(" \\____________________________________________________________//");
+		
+		return menu2;
 
 	}
 	

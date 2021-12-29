@@ -15,7 +15,7 @@ public class LucaSteamController {
 	/**
 	 * Da la bienvenida e imprime el menú
 	 */
-	public static void start() {
+	public void start() {
 		Menus.darBienvenida();
 		Menus.imprimirMenu();
 		elegirOpcion();
