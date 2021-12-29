@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_12_2021_12_54_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_12_2021_12_54__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación.">
+      <change afterPath="$PROJECT_DIR$/fichero.data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/DA_ERROR.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Genero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Plataforma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Plataforma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,20 +72,7 @@
       <recent name="C:\Users\manue\Desktop\lucatic\proyecto-lucatic\lucatic-proyecto1\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DaoTests.testListadoFichero">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controlador.Main" />
-      <module name="proyecto-lucasteam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controlador.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ServiciosTests.testFiltroGeneroPlataforma">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -96,48 +86,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LecturaTest.testEntradaTextoVacio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto-lucasteam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="daoTest.*" />
+          <option name="PATTERN" value="utilTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="daoTest" />
-      <option name="MAIN_CLASS_NAME" value="daoTest.DaoTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DaoTests.testLecturaFichero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proyecto-lucasteam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="daoTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="daoTest" />
-      <option name="MAIN_CLASS_NAME" value="daoTest.DaoTests" />
-      <option name="METHOD_NAME" value="testLecturaFichero" />
+      <option name="PACKAGE_NAME" value="utilTest" />
+      <option name="MAIN_CLASS_NAME" value="utilTest.LecturaTest" />
+      <option name="METHOD_NAME" value="testEntradaTextoVacio" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoTests.testListadoFichero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiciosTests.testFiltroGenero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto-lucasteam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="daoTest.*" />
+          <option name="PATTERN" value="serviciosTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="daoTest" />
-      <option name="MAIN_CLASS_NAME" value="daoTest.DaoTests" />
-      <option name="METHOD_NAME" value="testListadoFichero" />
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testFiltroGenero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiciosTests.testFiltroGeneroPlataforma" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviciosTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testFiltroGeneroPlataforma" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiciosTests.testFiltroPlataforma" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviciosTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testFiltroPlataforma" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiciosTests.testLecturaFichero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviciosTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testLecturaFichero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,10 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DaoTests.testListadoFichero" />
-        <item itemvalue="JUnit.DaoTests.testLecturaFichero" />
-        <item itemvalue="JUnit.DaoTests" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ServiciosTests.testFiltroGeneroPlataforma" />
+        <item itemvalue="JUnit.ServiciosTests.testFiltroPlataforma" />
+        <item itemvalue="JUnit.ServiciosTests.testFiltroGenero" />
+        <item itemvalue="JUnit.ServiciosTests.testLecturaFichero" />
+        <item itemvalue="JUnit.LecturaTest.testEntradaTextoVacio" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640720717560</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación.">
+      <created>1640770835961</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640770835961</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +296,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum()." />
     <MESSAGE value="Nuevos cambios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nuevos cambios" />
+    <MESSAGE value="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación." />
+    <option name="LAST_COMMIT_MESSAGE" value="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

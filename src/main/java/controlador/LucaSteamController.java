@@ -1,7 +1,6 @@
 package controlador;
 
 import gui.Menus;
-import servicios.IJuegosServicio;
 import servicios.JuegosServicios;
 import utilidad.LecturaServicio;
 
@@ -13,10 +12,11 @@ import utilidad.LecturaServicio;
 
 public class LucaSteamController {
 
-	private IJuegosServicio servicios = new JuegosServicios();
+	private JuegosServicios servicios = new JuegosServicios();
 	
 	/**
 	 * Da la bienvenida e imprime el menú
+	 * 
 	 */
 	
 	public void start() {
@@ -32,7 +32,7 @@ public class LucaSteamController {
 	
 	/**
 	 * Te da a elegir una opción de las del menú
-	 * @return 
+	 * @return continuar boolean
 	 */
 	public boolean elegirOpcion() {
 		boolean continuar = true;
@@ -62,13 +62,18 @@ public class LucaSteamController {
 	return continuar;	
 	}
 	
+	/**
+	 * Te da a elegir una opción de las del submenú "3. listas especificas"
+	 *
+	 */
+	
 	public void listaEspecifica() {
 		Menus.listasEspecificas();
 		try {
 			switch (utilidad.LecturaServicio.escribeNum()) {
 				case 1: 
 				//Dar listado de juegos de género plataforma
-					//listadoGeneroPlataforma();
+					listadoGeneroPlataforma();
 					break;
 			case 2:
 				//Dar listado de juegos para consolas de Nintendo
@@ -96,10 +101,44 @@ public class LucaSteamController {
 				
 	/**
 	 * Cierra el menú
+	 * @return siONo boolean
 	 */
 	
 	public boolean stop() throws Exception {
 		String siONo = utilidad.LecturaServicio.escribeTexto("¿Está seguro? (S/N)");
 		return (siONo.toUpperCase().charAt(0) != 'S');
 	}
+
+	/**
+	 * Devuelve la lista filtrada por genero "plataforma"
+	 */
+	
+	public void listadoGeneroPlataforma() {
+		System.out.println(servicios.filtroGenero("Platform"));
+	}
+	
+	/**
+	 * Devuelve la lista filtrada por editor "Nintendo"
+	 */
+	
+	public void listadoNintendo() {
+		
+	}
+	
+	/**
+	 * Devuelve la lista de editores disponibles
+	 */
+	
+	public void listadoEditores() {
+		
+	}
+	
+	/**
+	 * Devuelve la lista filtrada por sigloXX (año<1999)
+	 */
+	
+	public void listadoSigloXX() {
+		
+	}
 }
+

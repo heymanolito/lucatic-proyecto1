@@ -24,6 +24,11 @@ public class Menus {
 		System.out.println(" \\______________________________________________//");
 
 	}
+
+
+	/**
+	 * Este metodo imprime el submenu de listas especificas  y todas sus opciones
+	 */
 	
 public static void listasEspecificas() {
 		
