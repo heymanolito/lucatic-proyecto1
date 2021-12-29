@@ -1,6 +1,7 @@
 package controlador;
 
 import gui.Menus;
+import servicios.JuegosServicios;
 
 /**
  * 
@@ -17,6 +18,8 @@ public class LucaSteamController {
 	public static void start() {
 		Menus.darBienvenida();
 		Menus.imprimirMenu();
+		elegirOpcion();
+
 	}
 	
 	/**
@@ -31,19 +34,54 @@ public class LucaSteamController {
 		}
 		case 2:{
 			//Ver listado juegos
-			//JuegosServicio.listadoJuegos();
+			//JuegosServicios.listarTodo();
+			break;
 		}
 		case 3:{
 			//Ver listas específicas
-			//listaEspecifica();
+			Menus.listasEspecificas();
+			listaEspecifica();
+
+			break;
 		}
+		
 		case 0:{
 			stop();
+			break;
 		}
 		
 
 		default:
-			throw new IllegalArgumentException("Unexpected value: " + utilidad.LecturaServicio.escribeNum());
+			throw new IllegalArgumentException("No existe esa opción: " + utilidad.LecturaServicio.escribeNum());
+		}
+	}
+	
+	public static void listaEspecifica() {
+		switch (utilidad.LecturaServicio.escribeNum()) {
+		case 1: {
+			
+			//Dar listado de juegos de género plataforma
+			break;
+		}
+		case 2:{
+			//Dar listado de juegos para consolas de Nintendo
+			break;
+		}
+		case 3:{
+			//Dar listado de editores disponibles.
+			break;
+		}
+		case 4:{
+			//Dar listado de los juegos del siglo XX
+		}
+		
+		case 0:{
+			Menus.imprimirMenu();
+		}
+		
+
+		default:
+			throw new IllegalArgumentException("No existe esa opción: " + utilidad.LecturaServicio.escribeNum());
 		}
 	}
 	
