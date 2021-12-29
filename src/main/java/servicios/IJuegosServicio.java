@@ -13,7 +13,7 @@ public interface IJuegosServicio {
 	 * voy a dar de alta un juego preguntando al usuario
 	 * @param juego juego
 	 */
-	void altaJuegoNuevo(Juego juego);
+	boolean altaJuegoNuevo();
 
 	/**
 	 * facilita la lectura del archivo CVS
@@ -28,7 +28,7 @@ public interface IJuegosServicio {
 	/**
 	 * Serializamos la informacion del archivo
 	 */
-	void serializar();
+	void serializar1();
 
 	/**
 	 * Deserializamos la informacion del archivo

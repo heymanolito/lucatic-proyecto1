@@ -17,15 +17,12 @@ public enum Genero {
 
     private final int id;
     private static final int size = Genero.values().length;
-<<<<<<< HEAD
+
+   
+
     private Genero (int id) {
 		this.id=id;
-	}
-    
-=======
 
-    Genero(int id) {
-        this.id = id;
     }
 
     public int getId() {
@@ -36,7 +33,7 @@ public enum Genero {
         return size;
     }
 
->>>>>>> 800e2535d28ad7c965cda2d164450dd4d5ee8f99
+
     public static Genero escogeGenero(String str) {
 
         return switch (str) {
@@ -76,13 +73,5 @@ public enum Genero {
             default -> null;
         };
     }
-    
-    public int getId() {
-		return id;
-	}
-    
-    public static int getSize() {
-		return size;
-	}
 
 }

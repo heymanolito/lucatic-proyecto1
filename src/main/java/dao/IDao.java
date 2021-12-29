@@ -13,7 +13,7 @@ import modelo.Juego;
 	 * voy a dar de alta un juego preguntando al usuario
 	 * @param juego juego 
 	 */
-	void altaJuegoNuevo(Juego juego);
+	boolean altaJuegoNuevo(Juego juego);
 
 	/**
 	 * facilita la lectura del archivo CVS

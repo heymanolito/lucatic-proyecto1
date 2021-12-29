@@ -9,6 +9,7 @@ import gui.Menus;
 
 public class MenusTest {
 
+
 	private String testMenu = "  ______________________________________________"
 			+ " //                                              \\"
 			+ " |			   *Escoge una opcion:   			 |"
@@ -28,7 +29,7 @@ public class MenusTest {
 			  + " |      0. Salir  					                            |"
 			  + " \\____________________________________________________________//"
 		;
-	
+
 	@Test
 	@DisplayName ("Prueba Menus")
 	public void testDarBienvenida(){
@@ -40,7 +41,7 @@ public class MenusTest {
 		assertEquals(Menus.darDespedida()," Hasta la proxima ");
 		
 	}
-	
+
 	@Test
 	public void testImprimirMenu() {
 		assertEquals(Menus.imprimirMenu(),testMenu);
@@ -52,4 +53,7 @@ public class MenusTest {
 	}
 	
 	
+
+	
+
 }

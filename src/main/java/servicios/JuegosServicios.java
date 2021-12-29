@@ -1,11 +1,11 @@
 package servicios;
 
 import dao.DaoJuegosImpl;
-<<<<<<< HEAD
+
 import dao.IDao;
-=======
+
 import modelo.Genero;
->>>>>>> 800e2535d28ad7c965cda2d164450dd4d5ee8f99
+
 import modelo.Juego;
 import modelo.Plataforma;
 
@@ -22,8 +22,10 @@ public class JuegosServicios implements IJuegosServicio {
     DaoJuegosImpl daoJuegos = new DaoJuegosImpl();
 
     @Override
-    public void altaJuegoNuevo(Juego juego) {
-        daoJuegos.altaJuegoNuevo(juego);
+    public boolean altaJuegoNuevo() {
+    	Juego juego = new Juego();
+    	juego.crearJuego();
+        return daoJuegos.altaJuegoNuevo(juego);
     }
 
     @Override
@@ -31,7 +33,7 @@ public class JuegosServicios implements IJuegosServicio {
         daoJuegos.cargarCSV("fichero.csv");
     }
 
-    public void listarTodo() {
+    public void listarTodo1() {
         daoJuegos.listarTodo();
     }
 
@@ -40,7 +42,7 @@ public class JuegosServicios implements IJuegosServicio {
     }
 
     @Override
-    public void serializar() {
+    public void serializar1() {
         daoJuegos.serializar("fichero.data");
     }
 
@@ -53,7 +55,7 @@ public class JuegosServicios implements IJuegosServicio {
         return daoJuegos;
     }
 
-    public List<Plataforma> listaPlataformas() {
+    public List<Plataforma> listaPlataformas1() {
         return daoJuegos.listaPlataformas();
     }
 
@@ -82,6 +84,18 @@ public class JuegosServicios implements IJuegosServicio {
     }
 
     /**
+     * Filtra la colección por editores
+     * @param editor String
+     * @return List
+     */
+    public List<Juego> filtroEditor(String editor) {
+        return daoJuegos.getLista().values().stream()
+                .filter(juego -> juego.getEditor().equals(editor))
+                .collect(Collectors.toList());
+    }
+
+
+    /**
      * Filtra la colección de daoJuegos por editor y por plataforma
      * @param plataforma String
      * @param editor String
@@ -90,27 +104,17 @@ public class JuegosServicios implements IJuegosServicio {
 
 
     public List<Juego> filtroEditorPlataforma(String editor, String plataforma) {
-        List<Juego> listaFiltradaPorGenero = daoJuegos.getLista().values().stream()
-                .filter(juego -> juego.getEditor().equals(editor))
-                .collect(Collectors.toList());
-
-        return listaFiltradaPorGenero.stream().filter(juego -> juego.getPlataforma()
+        return filtroEditor(editor).stream().filter(juego -> juego.getPlataforma()
                 .equals(Plataforma.escogePlataforma(plataforma)))
                 .collect(Collectors.toList());
     }
 
+
 	private IDao stock = new DaoJuegosImpl();
 
-<<<<<<< HEAD
-	public void altaJuego(Juego juego) {
-		
-	}
-	public void bajaJuego(Juego juego) {
-		
-	}
-	public void modificarJuego(Integer id) {
-		
-	}
+
+	
+	
 	
 	public void leer() {
 		
@@ -127,13 +131,9 @@ public class JuegosServicios implements IJuegosServicio {
 		
 	}
 	
-	public void serializar() {
-		
-	}
 	
-	public void deserializar() {
-		
-	}
+	
+	
 	/*
 	public HashMap filtroGenero(Genero genero) {
 		
@@ -164,6 +164,7 @@ public class JuegosServicios implements IJuegosServicio {
 	
 	*/
 	
-=======
->>>>>>> 800e2535d28ad7c965cda2d164450dd4d5ee8f99
+
+	
+
 }

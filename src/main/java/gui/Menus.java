@@ -1,6 +1,5 @@
 package gui;
 
-
 import controlador.LucaSteamController;
 
 /**
@@ -24,13 +23,14 @@ public class Menus {
 						+ " \\______________________________________________//";
 				
 				
-		 	System.out.println("___________________________________________________");
+		 	System.out.println("   ___________________________________________________");
 	        System.out.println("  /  ________________________________________________ \\");
 	        System.out.println(" / /                                                 \\ \\");
 			System.out.println(" | |             *Escoge una opcion:                 | |");  
 			System.out.println(" | |         1. Dar de alta un juego.                | |");
 			System.out.println(" | |         2. Ver listado de juegos.               | |");
 			System.out.println(" | |         3. Ver listas especificas.              | |");
+			System.out.println(" | |         4. Filtrar juegos.                      | |");
 			System.out.println(" | |         0. Salir.                               | |");
 			System.out.println(" \\ \\_________________________________________________/ /");
 			System.out.println("  \\___________________________________________________/");
@@ -43,7 +43,7 @@ public class Menus {
 	 * @return el menu en string para poder hacer el test
 	 */
 	
-public static String listasEspecificas() {
+	public static String listasEspecificas() {
 	
 		String menu2=   "   ___________________________________________________________"
 					  + " //                                                 		   \\"
@@ -66,10 +66,10 @@ public static String listasEspecificas() {
 		System.out.println(" \\____________________________________________________________ /");
 		
 		return menu2;
-
 	}
 	
-
+	
+	
 	
 	/**
 	 * Este m�todo imprime el mensaje de bienvenida

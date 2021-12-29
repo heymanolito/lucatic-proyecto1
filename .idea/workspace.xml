@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación.">
-      <change afterPath="$PROJECT_DIR$/fichero.data" afterDir="false" />
+    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Implementación de filtros.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Genero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Genero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Plataforma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Plataforma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" afterDir="false" />
@@ -72,7 +66,7 @@
       <recent name="C:\Users\manue\Desktop\lucatic\proyecto-lucatic\lucatic-proyecto1\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ServiciosTests.testFiltroGeneroPlataforma">
+  <component name="RunManager" selected="JUnit.ServiciosTests.testCuentaPlataformasNintendo">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -86,17 +80,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LecturaTest.testEntradaTextoVacio" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiciosTests.testCuentaPlataformasNintendo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proyecto-lucasteam" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utilTest.*" />
+          <option name="PATTERN" value="serviciosTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="utilTest" />
-      <option name="MAIN_CLASS_NAME" value="utilTest.LecturaTest" />
-      <option name="METHOD_NAME" value="testEntradaTextoVacio" />
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testCuentaPlataformasNintendo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiciosTests.testFiltroEditor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviciosTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testFiltroEditor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,29 +160,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiciosTests.testLecturaFichero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proyecto-lucasteam" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="serviciosTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="serviciosTest" />
-      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
-      <option name="METHOD_NAME" value="testLecturaFichero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ServiciosTests.testCuentaPlataformasNintendo" />
+        <item itemvalue="JUnit.ServiciosTests.testFiltroEditor" />
         <item itemvalue="JUnit.ServiciosTests.testFiltroGeneroPlataforma" />
         <item itemvalue="JUnit.ServiciosTests.testFiltroPlataforma" />
         <item itemvalue="JUnit.ServiciosTests.testFiltroGenero" />
-        <item itemvalue="JUnit.ServiciosTests.testLecturaFichero" />
-        <item itemvalue="JUnit.LecturaTest.testEntradaTextoVacio" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640770835961</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implementación de filtros.">
+      <created>1640787111880</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640787111880</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +298,8 @@
     <MESSAGE value="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum()." />
     <MESSAGE value="Nuevos cambios" />
     <MESSAGE value="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación." />
-    <option name="LAST_COMMIT_MESSAGE" value="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación." />
+    <MESSAGE value="Implementación de filtros." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementación de filtros." />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

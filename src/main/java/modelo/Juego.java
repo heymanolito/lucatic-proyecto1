@@ -4,8 +4,7 @@ import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
-import lombok.Setter;
-import lombok.Getter;
+
 import utilidad.LecturaServicio;
 
 /**

@@ -1,15 +1,15 @@
 package dao;
 import java.io.*;
-<<<<<<< HEAD
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
 import lombok.Data;
 import modelo.Genero;
-=======
+
 import java.util.*;
->>>>>>> 800e2535d28ad7c965cda2d164450dd4d5ee8f99
+
 
 import modelo.Genero;
 import modelo.Juego;
@@ -20,12 +20,10 @@ import modelo.Plataforma;
  * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes, Natalia, Jaume
  * @inheritDoc
  */
-<<<<<<< HEAD
+
 
 public @Data class DaoJuegosImpl implements IDao {
-=======
-public class DaoJuegosImpl implements IDao {
->>>>>>> 800e2535d28ad7c965cda2d164450dd4d5ee8f99
+
 
 	private Map <Integer, Juego> lista = new HashMap<>();
 
@@ -36,9 +34,11 @@ public class DaoJuegosImpl implements IDao {
 	}
 
 	@Override
-	public void altaJuegoNuevo(Juego juego) {
+	public boolean altaJuegoNuevo(Juego juego) {
 		lista.put(darCodigoAleatorio(), juego);
+		return true;
 	}
+	
 
 
 	@Override
@@ -64,17 +64,19 @@ public class DaoJuegosImpl implements IDao {
 	public int listarTodo() {
 
 		int cont=0;
+		
 		for (Integer juego : lista.keySet()) {
 		
-	        //System.out.println("Nombre: " + lista.get(juego));
-	        //System.out.println("Nombre: " + lista.get(juego).getNombre());
-	        //System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
-	        //System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
-	        //System.out.println("Género: " + lista.get(juego).getGenero());
-	        //System.out.println("Editor: " + lista.get(juego).getEditor()); 
-	        //System.out.println();
+	        System.out.println("Nombre: " + lista.get(juego));
+	        System.out.println("Nombre: " + lista.get(juego).getNombre());
+	        System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
+	        System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
+	        System.out.println("Género: " + lista.get(juego).getGenero());
+	        System.out.println("Editor: " + lista.get(juego).getEditor()); 
+	        System.out.println();
 	        cont++;
 	    }
+	    
 		return cont;
 
 	}
