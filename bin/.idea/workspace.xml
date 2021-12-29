@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/IDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/excepciones/ExceptionPrueba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/Menus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilidad/FicheroServicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Servicios/PruebasFiltros.java" afterDir="false" />
+    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Arreglo de imports.">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controlador/LucaSteamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Menus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/IJuegosServicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/JuegosServicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/menuTest/MenusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/menuTest/MenusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/plataformaTest/PlataformaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/plataformaTest/PlataformaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +30,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="features" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#USE_PROJECT_JDK" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="22sbQD2mN0wxW8Q6tRWxIWsf07W" />
   <component name="ProjectLevelVcsManager">
@@ -42,22 +62,121 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\manue\Desktop\lucatic\proyecto-lucatic\lucatic-proyecto1" />
+      <recent name="C:\Users\manue\Desktop\lucatic\proyecto-lucatic\lucatic-proyecto1\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="controlador.Main" />
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controlador.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiciosTests.testCuentaPlataformasNintendo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviciosTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testCuentaPlataformasNintendo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiciosTests.testFiltroEditor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviciosTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testFiltroEditor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiciosTests.testFiltroGeneroPlataforma" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviciosTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testFiltroGeneroPlataforma" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiciosTests.testSumaJuegosNintendo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviciosTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviciosTest" />
+      <option name="MAIN_CLASS_NAME" value="serviciosTest.ServiciosTests" />
+      <option name="METHOD_NAME" value="testSumaJuegosNintendo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ServiciosTests.testSumaJuegosNintendo" />
+        <item itemvalue="JUnit.ServiciosTests.testCuentaPlataformasNintendo" />
+        <item itemvalue="JUnit.ServiciosTests.testFiltroEditor" />
+        <item itemvalue="JUnit.ServiciosTests.testFiltroGeneroPlataforma" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +189,108 @@
       <workItem from="1640629233086" duration="627000" />
       <workItem from="1640630085038" duration="424000" />
       <workItem from="1640636794903" duration="2036000" />
+      <workItem from="1640710377316" duration="10242000" />
+      <workItem from="1640761704767" duration="4745000" />
     </task>
+    <task id="LOCAL-00001" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640685564034</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640685564034</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640688699449</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640688699449</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640691665604</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640691665604</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640692195691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640692195691</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640692596496</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640692596496</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640695447003</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1640695447003</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640700518836</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640700518836</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640713910582</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640713910582</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Nuevos cambios">
+      <created>1640714420264</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640714420264</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Nuevos cambios">
+      <created>1640716233547</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640716233547</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Nuevos cambios">
+      <created>1640720717560</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640720717560</updated>
+    </task>
+    <task id="LOCAL-00012" summary="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación.">
+      <created>1640770835961</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640770835961</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implementación de filtros.">
+      <created>1640787111880</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640787111880</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implementación de filtros.">
+      <created>1640789863484</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1640789863484</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,5 +310,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum()." />
+    <MESSAGE value="Nuevos cambios" />
+    <MESSAGE value="He quitado los métodos de baja prioridad de la interfaz. He he heredado la documentación del javadoc en la implementación." />
+    <MESSAGE value="Implementación de filtros." />
+    <MESSAGE value="Arreglo de imports." />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglo de imports." />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="modelo.Juego" memberName="genero" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
