@@ -10,6 +10,10 @@ import utilidad.LecturaServicio;
 import java.util.Arrays;
 import java.util.List;
 
+import excepciones.EditorException;
+import excepciones.GeneroException;
+import excepciones.YearException;
+
 /**
  * @author Grupo01 Jaume y Natalia
  */
@@ -121,7 +125,7 @@ public class LucaSteamController {
         return (siONo.toUpperCase().charAt(0) != 'S');
     }
 
-    public void elegirFiltro() {
+    public void elegirFiltro() throws GeneroException{
 		listadoFiltros();
         String entrada = LecturaServicio.escribeTexto("Elija el filtro que desea: ");
         String entradaMinuscula = entrada.toLowerCase();
@@ -130,6 +134,7 @@ public class LucaSteamController {
             case "editor":
                 //Exception si no existe editor
                 System.out.println(servicios.filtroEditor(LecturaServicio.escribeTexto(" Elija el editor que quiera: ")));
+                
                 break;
             case "plataforma":
                 System.out.println("Plataformas disponibles: \n" + Arrays.asList(Plataforma.values()));
@@ -137,6 +142,7 @@ public class LucaSteamController {
 				break;
             case "fecha de publicacion":
                 System.out.println(servicios.filtroFechaPublicacion(LecturaServicio.escribeTexto(" Elija la fecha de publicación que quiera ")));
+                
                 break;
             case "genero":
                 System.out.println("Generos disponibles: \n" + Arrays.asList(Genero.values()));
@@ -147,6 +153,7 @@ public class LucaSteamController {
                 throw new IllegalArgumentException("No existe este filtro " + entrada);
         }
     }
+
 
     public void listadoFiltros() {
         System.out.println(
