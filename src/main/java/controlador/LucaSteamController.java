@@ -3,10 +3,11 @@ package controlador;
 import gui.Menus;
 import servicios.IJuegosServicio;
 import servicios.JuegosServicios;
+import utilidad.LecturaServicio;
 
 /**
  * 
- * @author Grupo01 Jaume
+ * @author Grupo01 Jaume y Natalia
  *
  */
 
@@ -18,7 +19,7 @@ public class LucaSteamController {
 	 * Da la bienvenida e imprime el menú
 	 */
 	
-	public static void start() {
+	public void start() {
 		boolean seguir = true;
 		Menus.darBienvenida();
 		do {
@@ -31,37 +32,74 @@ public class LucaSteamController {
 	
 	/**
 	 * Te da a elegir una opción de las del menú
+	 * @return 
 	 */
-	public static void elegirOpcion() {
-		switch (utilidad.LecturaServicio.escribeNum()) {
-		case 1: {
-			
-			//JuegosServicio.altaJuego(new Juego().crearJuego());
-			break;
-		}
-		case 2:{
+	public boolean elegirOpcion() {
+		boolean continuar = true;
+		try {
+			switch (utilidad.LecturaServicio.escribeNum()) {
+			case 1:
+			//Dar de alta un juego
+				//servicios.altaJuego(null);;
+				break;
+			case 2:
 			//Ver listado juegos
-			//JuegosServicio.listadoJuegos();
-		}
-		case 3:{
+				servicios.listarTodo();
+				break;
+			case 3:
 			//Ver listas específicas
-			//listaEspecifica();
+				listaEspecifica();
+				break;	
+			case 0:
+			continuar = stop();
+			break;
+			}
 		}
-		case 0:{
-			stop();
+		catch (Exception e) {
+			System.out.println("Error: " + e.toString());
+			throw new IllegalArgumentException("No existe esa opción: " + utilidad.LecturaServicio.escribeNum());
 		}
-		
-
-		default:
-			throw new IllegalArgumentException("Unexpected value: " + utilidad.LecturaServicio.escribeNum());
-		}
+	return continuar;	
 	}
 	
-	
+	public void listaEspecifica() {
+		Menus.listasEspecificas();
+		try {
+			switch (utilidad.LecturaServicio.escribeNum()) {
+				case 1: 
+				//Dar listado de juegos de género plataforma
+					//listadoGeneroPlataforma();
+					break;
+			case 2:
+				//Dar listado de juegos para consolas de Nintendo
+					//listadoNintendo();
+					break;
+			case 3:
+				//Dar listado de editores disponibles.
+					//listadoEditores();
+					break;
+			case 4:
+				//Dar listado de los juegos del siglo XX
+					//listadoSigloXX
+			case 0:
+				Menus.imprimirMenu();
+				elegirOpcion();
+			}
+		}
+		catch (Exception e) {
+			System.out.println("Error: " +e.toString());
+			throw new IllegalArgumentException("No existe esa opción: " + utilidad.LecturaServicio.escribeNum());
+		}
+		elegirOpcion();
+	}
+		
+				
 	/**
 	 * Cierra el menú
 	 */
-	public static void stop() {
-		
+	
+	public boolean stop() throws Exception {
+		String siONo = utilidad.LecturaServicio.escribeTexto("¿Está seguro? (S/N)");
+		return (siONo.toUpperCase().charAt(0) != 'S');
 	}
 }

@@ -8,7 +8,9 @@ import modelo.Juego;
 
 public class JuegosServicios implements IJuegosServicio{
 
+
 	private IDao lista = new DaoJuegosImpl();
+
 
 	public void altaJuego(Juego juego) {
 		
