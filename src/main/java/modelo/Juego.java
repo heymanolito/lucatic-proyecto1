@@ -17,7 +17,7 @@ public @Data class Juego implements Serializable{
 	
 
 	private static final long serialVersionUID = 1L;
-	@Setter private String nombre;
+	private String nombre;
 	private int fechaPublicacion;
 	private Plataforma plataforma;
 	private Genero genero;

@@ -39,6 +39,12 @@ public @Data class DaoJuegosImpl implements IDao {
 	public void altaJuegoNuevo(Juego juego) {
 		lista.put(darCodigoAleatorio(), juego.crearJuego());		
 	}
+	
+	@Override
+	public void altaJuegoLista(Juego juego) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	@Override
 	public void bajaJuego(Juego juego) {
@@ -82,7 +88,7 @@ public @Data class DaoJuegosImpl implements IDao {
 		for (Integer juego : lista.keySet()) {
 			
 	        System.out.println("Nombre: " + lista.get(juego).getNombre());
-	        System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPubliacion());
+	        System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
 	        System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
 	        System.out.println("Género: " + lista.get(juego).getGenero());
 	        System.out.println("Editor: " + lista.get(juego).getEditor()); 
@@ -135,4 +141,6 @@ public @Data class DaoJuegosImpl implements IDao {
 		}
 
 	}
+
+	
 }
