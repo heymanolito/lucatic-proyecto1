@@ -3,10 +3,12 @@ package servicios;
 import java.util.HashMap;
 
 import dao.DaoJuegosImpl;
+import dao.IDao;
 import modelo.Juego;
 
 public class JuegosServicios implements IJuegosServicio{
 
+	private IDao lista = new DaoJuegosImpl();
 
 	public void altaJuego(Juego juego) {
 		

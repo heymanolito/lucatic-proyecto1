@@ -1,30 +1,26 @@
 package modelo;
 
+import java.io.Serial;
 import java.io.Serializable;
 
 import lombok.Data;
-import lombok.Setter;
-
 import utilidad.LecturaServicio;
-import lombok.AccessLevel;
 
 /**
  * @author Grupo1 Natalia 
  */
 
-
 public @Data class Juego implements Serializable{
 	
-
+	@Serial
 	private static final long serialVersionUID = 1L;
 	private String nombre;
-	private int fechaPublicacion;
+	private String fechaPublicacion;
 	private Plataforma plataforma;
 	private Genero genero;
 	private String editor;
 	
-	
-	public Juego (String nombre, int fechaPublicacion, Plataforma plataforma, Genero genero, String editor) {
+	public Juego (String nombre, String fechaPublicacion, Plataforma plataforma, Genero genero, String editor) {
 		this.nombre=nombre;
 		this.fechaPublicacion=fechaPublicacion;
 		this.plataforma=plataforma;
@@ -32,21 +28,23 @@ public @Data class Juego implements Serializable{
 		this.editor=editor;
 	}
 
-/**
-* Este método pregunta al usuario los atributos de un juego.
-*/	
+	public Juego() {
+
+	}
+
+	/**
+	* Este método pregunta al usuario los atributos de un juego.
+	*/
 	
 	public Juego crearJuego() {
 		this.nombre=LecturaServicio.escribeTexto("Indique el nombre del juego.");
-		this.fechaPublicacion=LecturaServicio.escribeNum("Indique el año de publicación del juego.");
+		this.fechaPublicacion=LecturaServicio.escribeTexto("Indique el año de publicación del juego.");
 		Plataforma.plataformasDisponibles();
 		this.plataforma=Plataforma.dimePlataforma(LecturaServicio.escribeNum("Indique el número correspondiente a la plataforma del juego."));
-		Genero.generosDisponibles();
-		this.genero=Genero.dimeGenero(LecturaServicio.escribeNum("Indique el número correspondiente al género del juego."));
+		//Genero.generosDisponibles(); HACER GENEROS DISPONIBLES!!
+		this.genero= Genero.dimeGenero(LecturaServicio.escribeNum("Indique el número correspondiente al género del juego."));
 		this.editor=LecturaServicio.escribeTexto("Indique el editor del juego.");
 		return new Juego(nombre, fechaPublicacion, plataforma, genero, editor);
-		
-		
 	}
 	
 }

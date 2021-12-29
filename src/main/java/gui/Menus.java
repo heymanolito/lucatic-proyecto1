@@ -1,8 +1,6 @@
 package gui;
 
 
-import org.junit.jupiter.api.Test;
-
 import controlador.LucaSteamController;
 
 /**
@@ -11,7 +9,7 @@ import controlador.LucaSteamController;
 public class Menus {
 
 	/**
-	 * Este método imprime el menú y todas sus opciones
+	 * Este mï¿½todo imprime el menï¿½ y todas sus opciones
 	 */
 	
 	public static void imprimirMenu() {
@@ -21,25 +19,25 @@ public class Menus {
 		System.out.println(" |			   *Escoge una opcion:   			  |");  
 		System.out.println(" |			 1. Dar de alta un juego.  			  |");
 		System.out.println(" |			 2. Ver listado de juegos.  	      |");
-		System.out.println(" |			 3. Ver listas específicas.  		  |");
+		System.out.println(" |			 3. Ver listas especï¿½ficas.  		  |");
 		System.out.println(" |           0. Salir                             |");
 		System.out.println(" \\______________________________________________//");
 		LucaSteamController.elegirOpcion();
 
 	}
 	/**
-	 * Este método imprime el mensaje de bienvenida
+	 * Este mï¿½todo imprime el mensaje de bienvenida
 	 */
-	@Test
+
 	public static void darBienvenida() {
 		System.out.println(" Bienvenido al gestor de juegos de LucaSteam "  );
 	}
-	
+
 	/**
-	 * Este método imprime el mensaje de despedida
+	 * Este mï¿½todo imprime el mensaje de despedida
 	 */
-	@Test
+
 	public static void darDespedida() {
-		System.out.println(" Hasta la próxima ");
+		System.out.println(" Hasta la prï¿½xima ");
 	}
 }

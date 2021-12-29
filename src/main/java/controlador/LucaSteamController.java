@@ -1,6 +1,8 @@
 package controlador;
 
 import gui.Menus;
+import servicios.IJuegosServicio;
+import servicios.JuegosServicios;
 
 /**
  * 
@@ -10,13 +12,21 @@ import gui.Menus;
 
 public class LucaSteamController {
 
+	private IJuegosServicio servicios = new JuegosServicios();
 	
 	/**
 	 * Da la bienvenida e imprime el menú
 	 */
+	
 	public static void start() {
+		boolean seguir = true;
 		Menus.darBienvenida();
-		Menus.imprimirMenu();
+		do {
+			Menus.imprimirMenu();
+			seguir = this.elegirOpcion();
+		}
+		while (seguir);
+		Menus.darDespedida();
 	}
 	
 	/**
@@ -52,6 +62,6 @@ public class LucaSteamController {
 	 * Cierra el menú
 	 */
 	public static void stop() {
-		Menus.darDespedida();
+		
 	}
 }
