@@ -25,7 +25,7 @@ public class LucaSteamController {
 	/**
 	 * Te da a elegir una opción de las del menú
 	 */
-	public static void elegirOpcion() {
+	public void elegirOpcion() {
 		switch (utilidad.LecturaServicio.escribeNum()) {
 		case 1: {
 			
