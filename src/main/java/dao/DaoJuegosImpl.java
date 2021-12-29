@@ -17,7 +17,7 @@ import modelo.Plataforma;
  * @inheritDoc
  */
 
-public class DaoJuegosImpl implements IDao {
+public @Data class DaoJuegosImpl implements IDao {
 
 	private Map <Integer, Juego> lista = new HashMap<>();
 
@@ -53,18 +53,21 @@ public class DaoJuegosImpl implements IDao {
 	}
 
 	@Override
-	public void listarTodo() {
+	public int listarTodo() {
 
+		int cont=0;
 		for (Integer juego : lista.keySet()) {
 		
-	        System.out.println("Nombre: " + lista.get(juego));
-	        System.out.println("Nombre: " + lista.get(juego).getNombre());
-	        System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
-	        System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
-	        System.out.println("Género: " + lista.get(juego).getGenero());
-	        System.out.println("Editor: " + lista.get(juego).getEditor()); 
-	        System.out.println();
+	        //System.out.println("Nombre: " + lista.get(juego));
+	        //System.out.println("Nombre: " + lista.get(juego).getNombre());
+	        //System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
+	        //System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
+	        //System.out.println("Género: " + lista.get(juego).getGenero());
+	        //System.out.println("Editor: " + lista.get(juego).getEditor()); 
+	        //System.out.println();
+	        cont++;
 	    }
+		return cont;
 
 	}
 

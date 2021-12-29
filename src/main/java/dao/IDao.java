@@ -23,7 +23,7 @@ import modelo.Juego;
 	/**
 	 * Mostramos la informacion 
 	 */
-	void listarTodo();
+	int listarTodo();
 
 	/**
 	 * Serializamos la informacion del archivo

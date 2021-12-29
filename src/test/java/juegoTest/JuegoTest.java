@@ -18,11 +18,11 @@ public class JuegoTest {
 	//String nombre, int fechaPublicacion, Plataforma plataforma, Genero genero, String editor
 	
 	@Test
-    @DisplayName("Prueba id")
+    @DisplayName("Prueba constructor")
     public void testConstructor() {
 
-		assertEquals(new Juego("War", "1999", Plataforma.GG, Genero.Action, "Sony"), juego2);
-		assertEquals(new Juego("Zelda", "2006", Plataforma.GBA, Genero.Adventure, "Sony"), juego3);
+		assertEquals(new Juego("War", "1999", Plataforma.GG, Genero.Action, "Sony"), juego3);
+		assertEquals(new Juego("Zelda", "2006", Plataforma.GBA, Genero.Adventure, "Nintendo"), juego2);
 		assertEquals(new Juego(), juego);
 		//assertEquals(plataforma2.getId(), 1);
 	}
