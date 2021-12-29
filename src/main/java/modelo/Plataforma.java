@@ -52,7 +52,16 @@ public enum Plataforma {
 	public static int getSize() {
 		return size;
 	}
-	
+
+
+	public static Plataforma escogePlataforma(String str) {
+		return switch (str) {
+			case "3DS" -> _3DS;
+			case "3DO" -> _3DO;
+			case "2600" -> _2600;
+			default -> Plataforma.valueOf(str);
+		};
+	}
 	/**
 	 * 
 	 * @param id
@@ -146,7 +155,7 @@ public enum Plataforma {
 	            System.out.println(sb);
 	        }
 	    }
-	
+
 	
 	
 }

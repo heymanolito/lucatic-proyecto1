@@ -31,8 +31,15 @@ public class DaoTests {
     @Test
     @DisplayName("Lectura del fichero CSV")
     void testLecturaFichero() {
-        dao.leer("fichero.csv");
+        dao.cargarCSV("fichero.csv");
 
+    }
+
+    @Test
+    @DisplayName("Listar elementos del HashMap")
+    void testListadoFichero() {
+        dao.cargarCSV("fichero.csv");
+        dao.listarTodo();
     }
 
 

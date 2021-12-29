@@ -18,14 +18,14 @@ public class GeneroTest {
 	@DisplayName("Prueba Genero")
 	public void testGetId() {
 
-			assertEquals(genero.getInt(), 1);
-			assertEquals(genero2.getInt(), 6);
-			assertEquals(genero3.getInt(), 10);
+			assertEquals(genero.getId(), 1);
+			assertEquals(genero2.getId(), 6);
+			assertEquals(genero3.getId(), 10);
 	}
 	@Test
 	public void testGetSize() {
 
-		assertEquals(Plataforma.getSize(), Genero.values().length);
+		assertEquals(Genero.getSize(), Genero.values().length);
 		
 	}
 	@Test

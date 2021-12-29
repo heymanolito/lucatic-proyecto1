@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/daoTest/DaoTests.java" afterDir="false" />
+    <list default="true" id="b29d961b-e284-4e18-9ca5-d71911f8d020" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_12_2021_12_54_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_12_2021_12_54__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoJuegosImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fichero/fichero.csv" beforeDir="false" afterPath="$PROJECT_DIR$/fichero.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelo/DA_ERROR.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelo/Juego.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Servicios/PruebasFiltros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/serviciosTest/ServiciosTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +23,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -69,7 +69,7 @@
       <recent name="C:\Users\manue\Desktop\lucatic\proyecto-lucatic\lucatic-proyecto1\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DaoTests">
+  <component name="RunManager" selected="JUnit.DaoTests.testListadoFichero">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controlador.Main" />
       <module name="proyecto-lucasteam" />
@@ -83,13 +83,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,10 +127,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DaoTests.testListadoFichero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proyecto-lucasteam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="daoTest" />
+      <option name="MAIN_CLASS_NAME" value="daoTest.DaoTests" />
+      <option name="METHOD_NAME" value="testListadoFichero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DaoTests" />
+        <item itemvalue="JUnit.DaoTests.testListadoFichero" />
         <item itemvalue="JUnit.DaoTests.testLecturaFichero" />
+        <item itemvalue="JUnit.DaoTests" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -144,7 +163,8 @@
       <workItem from="1640629233086" duration="627000" />
       <workItem from="1640630085038" duration="424000" />
       <workItem from="1640636794903" duration="2036000" />
-      <workItem from="1640710377316" duration="3385000" />
+      <workItem from="1640710377316" duration="10242000" />
+      <workItem from="1640761704767" duration="4745000" />
     </task>
     <task id="LOCAL-00001" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
       <created>1640685564034</created>
@@ -195,7 +215,35 @@
       <option name="project" value="LOCAL" />
       <updated>1640700518836</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum().">
+      <created>1640713910582</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640713910582</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Nuevos cambios">
+      <created>1640714420264</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640714420264</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Nuevos cambios">
+      <created>1640716233547</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640716233547</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Nuevos cambios">
+      <created>1640720717560</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640720717560</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +264,14 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum()." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadida la clase LecturaServicio y los métodos escribeTexto() y escribeNum()." />
+    <MESSAGE value="Nuevos cambios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nuevos cambios" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="modelo.Juego" memberName="genero" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
