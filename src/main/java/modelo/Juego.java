@@ -46,5 +46,15 @@ public @Data class Juego implements Serializable{
 		this.editor=LecturaServicio.escribeTexto("Indique el editor del juego.");
 		return new Juego(nombre, fechaPublicacion, plataforma, genero, editor);
 	}
-	
+
+	@Override
+	public String toString() {
+		return "\n" +
+				"Nombre: " + nombre + '\n' +
+				"Fecha de publicacion: " + fechaPublicacion + '\n' +
+				"Plataforma: " + plataforma + '\n' +
+				"Genero: " + genero + '\n' +
+				"Editor: " + editor + '\n' +
+				"-------------------------------------------------";
+	}
 }

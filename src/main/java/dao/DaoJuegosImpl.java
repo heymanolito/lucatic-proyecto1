@@ -1,7 +1,7 @@
 package dao;
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+
 import modelo.Genero;
 import modelo.Juego;
 import modelo.Plataforma;
@@ -11,7 +11,6 @@ import modelo.Plataforma;
  * @author Grupo01: Jose Manuel Molina, Manuel Gallardo Fuentes, Natalia, Jaume
  * @inheritDoc
  */
-
 public class DaoJuegosImpl implements IDao {
 
 	private Map <Integer, Juego> lista = new HashMap<>();
@@ -24,7 +23,7 @@ public class DaoJuegosImpl implements IDao {
 
 	@Override
 	public void altaJuegoNuevo(Juego juego) {
-		lista.put(darCodigoAleatorio(), juego.crearJuego());
+		lista.put(darCodigoAleatorio(), juego);
 	}
 
 
@@ -92,4 +91,11 @@ public class DaoJuegosImpl implements IDao {
 
 	}
 
+	public Map<Integer, Juego> getLista() {
+		return lista;
+	}
+
+	public List<Plataforma> listaPlataformas(){
+		return new ArrayList<>(Arrays.asList(Plataforma.values()));
+	}
 }

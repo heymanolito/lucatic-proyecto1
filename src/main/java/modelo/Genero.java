@@ -15,7 +15,19 @@ public enum Genero {
     Sports(11),
     Strategy(12);
 
-    Genero(int i) {
+    private final int id;
+    private static final int size = Genero.values().length;
+
+    Genero(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public static int getSize() {
+        return size;
     }
 
     public static Genero escogeGenero(String str) {
@@ -24,6 +36,19 @@ public enum Genero {
             case "Role-Playing" -> RolePlaying;
             default -> Genero.valueOf(str);
         };
+    }
+
+    public static void generosDisponibles() {
+        StringBuilder sb;
+        for ( Genero gen : Genero.values() ) {
+            sb = new StringBuilder();
+            sb.append("(").
+                    append(gen.id).
+                    append(")").
+                    append(gen).
+                    append("|");
+            System.out.println(sb);
+        }
     }
 
     public static Genero dimeGenero(int id) {
