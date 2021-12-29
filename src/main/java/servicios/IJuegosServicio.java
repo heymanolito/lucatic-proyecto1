@@ -1,7 +1,5 @@
 package servicios;
 
-import modelo.Juego;
-
 /**
  * 
  * @author Grupo01: Jose Manuel Molina
@@ -13,13 +11,12 @@ public interface IJuegosServicio {
 	 * voy a dar de alta un juego preguntando al usuario
 	 * @param juego juego
 	 */
-<<<<<<< Updated upstream
-	boolean altaJuegoNuevo();
-=======
-	void altaJuegoNuevo();
->>>>>>> Stashed changes
 
-	/**
+	boolean altaJuegoNuevo();
+
+
+	/*
+	*
 	 * facilita la lectura del archivo CVS
 	 */
 	void cogeCSV();

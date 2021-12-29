@@ -1,17 +1,11 @@
 package daoTest;
-
 import dao.DaoJuegosImpl;
-<<<<<<< HEAD
-import modelo.Genero;
-import modelo.Juego;
-=======
->>>>>>> b2fa8da (Arreglo de imports.)
 import org.apache.logging.log4j.LogManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.logging.Logger;
 

@@ -1,5 +1,4 @@
 package menuTest;
-
 import gui.Menus;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -19,8 +18,8 @@ public class MenusTest {
 	
 	private String testMenu2=  "   ___________________________________________________________"
 			  + " //                                                 		   \\"
-			  + " |			   *Escoge una listaEspecífica:   			  		|"
-			  + " |		1. Dar listado de juegos de género plataforma.   	 	|"
+			  + " |			   *Escoge una listaEspecï¿½fica:   			  		|"
+			  + " |		1. Dar listado de juegos de gï¿½nero plataforma.   	 	|"
 			  + " |		2. Dar listado de juegos para consolas de Nintendo.     |"
 			  + " |		3. Dar listado de editores disponibles.  		        |"
 			  + " |		4. Dar listado de los juegos del siglo XX.  		    |"
@@ -40,7 +39,6 @@ public class MenusTest {
 		
 	}
 
-<<<<<<< HEAD
 	@Test
 	public void testImprimirMenu() {
 		assertEquals(Menus.imprimirMenu(),testMenu);
@@ -51,10 +49,5 @@ public class MenusTest {
 		assertEquals(Menus.listasEspecificas(), testMenu2);
 	}
 	
-	
 
-	
-
-=======
->>>>>>> b2fa8da (Arreglo de imports.)
 }

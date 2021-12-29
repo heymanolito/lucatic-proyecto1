@@ -1,5 +1,4 @@
 package plataformaTest;
-
 import modelo.Plataforma;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

@@ -1,9 +1,7 @@
 package gui;
 
-<<<<<<< HEAD
+
 import controlador.LucaSteamController;
-=======
->>>>>>> b2fa8da (Arreglo de imports.)
 
 /**
  * @author Grupo01 Jaume

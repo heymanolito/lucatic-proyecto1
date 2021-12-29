@@ -1,5 +1,4 @@
 package servicios;
-
 import dao.DaoJuegosImpl;
 import modelo.Genero;
 import modelo.Juego;
@@ -18,17 +17,23 @@ public class JuegosServicios implements IJuegosServicio {
     DaoJuegosImpl daoJuegos = new DaoJuegosImpl();
 
     @Override
-    public void altaJuegoNuevo() {
-        daoJuegos.altaJuegoNuevo(new Juego().crearJuego());
+    public boolean altaJuegoNuevo() {
+        Juego juego = new Juego();
+        juego.crearJuego();
+        return daoJuegos.altaJuegoNuevo(juego);
     }
 
     @Override
     public void cogeCSV() {
         daoJuegos.cargarCSV("fichero.csv");
     }
-    @Override
-    public void listarTodo() {
+
+    public void listarTodo1() {
         daoJuegos.listarTodo();
+    }
+
+    public Integer darCodigoAleatorio() {
+        return daoJuegos.darCodigoAleatorio();
     }
 
     @Override
@@ -45,12 +50,7 @@ public class JuegosServicios implements IJuegosServicio {
         return daoJuegos;
     }
 
-    public Integer darCodigoAleatorio() {
-        return daoJuegos.darCodigoAleatorio();
-    }
-
-
-    public List<Plataforma> listaPlataformas() {
+    public List<Plataforma> listaPlataformas1() {
         return daoJuegos.listaPlataformas();
     }
 
@@ -102,9 +102,27 @@ public class JuegosServicios implements IJuegosServicio {
         return filtroEditor(editor).stream().filter(juego -> juego.getPlataforma()
                 .equals(Plataforma.escogePlataforma(plataforma)))
                 .collect(Collectors.toList());
-
     }
 
+    /**
+     * Filtra la colecciÃ³n por fecha de publicacion
+     * @param fechaPublicacion String
+     * @return List
+     */
+    public List<Juego> filtroFechaPublicacion(String fechaPublicacion) {
+        return daoJuegos.getLista().values().stream()
+                .filter(juego -> juego.getFechaPublicacion().equals(fechaPublicacion))
+                .collect(Collectors.toList());
+    }
 
+    public void listarTodo() {
+        daoJuegos.listarTodo();
+    }
+
+    public List<String> listarEditores() {
+        return daoJuegos.getLista().values().stream()
+                .map(Juego::getEditor)
+                .distinct()
+                .collect(Collectors.toList()); }
 
 }

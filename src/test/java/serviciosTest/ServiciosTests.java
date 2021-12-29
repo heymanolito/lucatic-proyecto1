@@ -1,7 +1,5 @@
 package serviciosTest;
-
 import daoTest.DaoTests;
-import modelo.Juego;
 import org.apache.logging.log4j.LogManager;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,7 +7,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import servicios.JuegosServicios;
 
+import java.util.List;
 import java.util.logging.Logger;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ServiciosTests {
 
@@ -36,7 +37,7 @@ public class ServiciosTests {
         servicios.cogeCSV();
         int count = servicios.getDaoJuegos().getLista().size();
         servicios.altaJuegoNuevo();
-        Assertions.assertEquals(count + 1, servicios.getDaoJuegos().getLista().size());
+        assertEquals(count + 1, servicios.getDaoJuegos().getLista().size());
     }
 
     @Test
@@ -87,6 +88,17 @@ public class ServiciosTests {
         int count = (int) (juegosGBA + juegosWII + juegosNES + juegosDS + juegos3DS + juegosSNES +
                         juegosN64 + juegosGC + juegosGB + juegosWiiU);
 
-        Assertions.assertEquals(juegosNintendo, count);
+        assertEquals(juegosNintendo, count);
+    }
+
+    @Test
+    @DisplayName("Lista todos los editores")
+    void testListarEditores() {
+
+        List<String> editores2 = servicios.listarEditores();
+        servicios.cogeCSV();
+        List<String> editores = servicios.listarEditores();
+        assertEquals(editores.size(), 579);
+        assertEquals(editores2.size(), 0);
     }
 }

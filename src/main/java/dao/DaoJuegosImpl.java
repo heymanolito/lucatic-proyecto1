@@ -1,25 +1,13 @@
 package dao;
-<<<<<<< HEAD
 import java.io.*;
-
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
-
 import lombok.Data;
 import modelo.Genero;
 
 import java.util.*;
-
-=======
->>>>>>> b2fa8da (Arreglo de imports.)
-
-import modelo.Genero;
 import modelo.Juego;
 import modelo.Plataforma;
-
-import java.io.*;
-import java.util.*;
 
 /**
  * 
@@ -27,20 +15,14 @@ import java.util.*;
  * @inheritDoc
  */
 
-<<<<<<< HEAD
-
 public @Data class DaoJuegosImpl implements IDao {
 
-=======
-public class DaoJuegosImpl implements IDao {
->>>>>>> b2fa8da (Arreglo de imports.)
+	private Map<Integer, Juego> lista = new HashMap<>();
 
-	private Map <Integer, Juego> lista = new HashMap<>();
-
-	public Integer darCodigoAleatorio () {
+	public Integer darCodigoAleatorio() {
 		int id;
 		id = (int) Math.round((Math.random() * (50000 - 16601) + 16601));
-		return id;		
+		return id;
 	}
 
 	@Override
@@ -48,7 +30,6 @@ public class DaoJuegosImpl implements IDao {
 		lista.put(darCodigoAleatorio(), juego);
 		return true;
 	}
-	
 
 
 	@Override
@@ -73,20 +54,18 @@ public class DaoJuegosImpl implements IDao {
 	@Override
 	public int listarTodo() {
 
-		int cont=0;
-		
-		for (Integer juego : lista.keySet()) {
-		
-	        System.out.println("Nombre: " + lista.get(juego));
-	        System.out.println("Nombre: " + lista.get(juego).getNombre());
-	        System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
-	        System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
-	        System.out.println("Género: " + lista.get(juego).getGenero());
-	        System.out.println("Editor: " + lista.get(juego).getEditor()); 
-	        System.out.println();
-	        cont++;
-	    }
-	    
+		int cont = 0;
+
+		for ( Integer juego : lista.keySet() ) {
+			System.out.println("Nombre: " + lista.get(juego).getNombre());
+			System.out.println("Fecha de publicación: " + lista.get(juego).getFechaPublicacion());
+			System.out.println("Plataforma: " + lista.get(juego).getPlataforma());
+			System.out.println("Género: " + lista.get(juego).getGenero());
+			System.out.println("Editor: " + lista.get(juego).getEditor());
+			System.out.println();
+			cont++;
+		}
+
 		return cont;
 
 	}
@@ -125,7 +104,7 @@ public class DaoJuegosImpl implements IDao {
 		return lista;
 	}
 
-	public List<Plataforma> listaPlataformas(){
+	public List<Plataforma> listaPlataformas() {
 		return new ArrayList<>(Arrays.asList(Plataforma.values()));
 	}
 }

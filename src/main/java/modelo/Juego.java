@@ -1,18 +1,8 @@
 package modelo;
-
 import lombok.Data;
 import utilidad.LecturaServicio;
-
 import java.io.Serial;
 import java.io.Serializable;
-
-<<<<<<< HEAD
-import lombok.Data;
-
-import utilidad.LecturaServicio;
-
-=======
->>>>>>> b2fa8da (Arreglo de imports.)
 /**
  * @author Grupo1 Natalia 
  */
