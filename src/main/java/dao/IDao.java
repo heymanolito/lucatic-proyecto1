@@ -25,15 +25,5 @@ import modelo.Juego;
 	 */
 	int listarTodo();
 
-	/**
-	 * Serializamos la informacion del archivo
-	 */
-	void serializar(String fichero);
-	
-	/**
-	 * Deserializamos la informacion del archivo
-	 */
-	void deserializar(String fichero) throws ClassNotFoundException;
-
 
 }

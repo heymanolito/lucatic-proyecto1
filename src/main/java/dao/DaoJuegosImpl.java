@@ -70,35 +70,6 @@ public @Data class DaoJuegosImpl implements IDao {
 
 	}
 
-	@Override
-	public void serializar(String fichero) {
-		File f;
-		try {
-			f = new File(fichero);
-			FileOutputStream fos = new FileOutputStream(f);
-			ObjectOutputStream s = new ObjectOutputStream(fos);
-			s.writeObject(lista);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-	}
-
-	@SuppressWarnings("unchecked")
-	@Override
-	public void deserializar(String fichero) throws ClassNotFoundException {
-		File f;
-		try {
-			f = new File(fichero);
-			ObjectInputStream s = new ObjectInputStream(
-					new FileInputStream(f));
-
-			lista = (Map<Integer, Juego>) s.readObject();
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-
-	}
 
 	public Map<Integer, Juego> getLista() {
 		return lista;

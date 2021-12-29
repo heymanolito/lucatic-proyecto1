@@ -26,15 +26,6 @@ public interface IJuegosServicio {
 	 */
 	void listarTodo();
 
-	/**
-	 * Serializamos la informacion del archivo
-	 */
-	void serializar();
-
-	/**
-	 * Deserializamos la informacion del archivo
-	 */
-	void deserializar() throws ClassNotFoundException;
-
+	
 
 }

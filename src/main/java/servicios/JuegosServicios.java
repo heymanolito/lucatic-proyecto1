@@ -36,15 +36,8 @@ public class JuegosServicios implements IJuegosServicio {
         return daoJuegos.darCodigoAleatorio();
     }
 
-    @Override
-    public void serializar() {
-        daoJuegos.serializar("fichero.data");
-    }
-
-    @Override
-    public void deserializar() throws ClassNotFoundException {
-        daoJuegos.deserializar("fichero.data");
-    }
+    
+   
 
     public DaoJuegosImpl getDaoJuegos() {
         return daoJuegos;
@@ -55,7 +48,7 @@ public class JuegosServicios implements IJuegosServicio {
     }
 
     /**
-     * Filtra la colección de daoJuegos por género
+     * Filtra la coleccion de daoJuegos por género
      * @param genero String
      * @return List
      */

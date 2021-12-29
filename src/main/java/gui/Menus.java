@@ -58,7 +58,7 @@ public class Menus {
 				;
 		System.out.println("   ___________________________________________________________");
 		System.out.println(" /                                                             \\");
-		System.out.println(" |             *Escoge una listaEspecífica:                    |");  
+		System.out.println(" |             *Escoge una lista especifica:                   |");  
 		System.out.println(" |      1. Dar listado de juegos de género plataforma.         |");
 		System.out.println(" |      2. Dar listado de juegos para consolas de Nintendo.    |");
 		System.out.println(" |      3. Dar listado de editores disponibles.                |");
